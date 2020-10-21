@@ -6,6 +6,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import MediaControlCard from './component/projetCarte'
 import Typical from 'react-typical';
 import Competences from './component/Competences'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './App.css';
 
 const titre = "C:\\user\\Florian>"
@@ -14,8 +15,6 @@ const langage = [
     {source: "./svg/003-java.svg",
     valeur: 70}, 
     {source: "./svg/006-react.svg",
-    valeur: 70},
-    {source: "./svg/010-github.svg",
     valeur: 70},
     {source: "./svg/018-c.svg",
     valeur: 70},
@@ -33,6 +32,23 @@ const langage = [
     valeur: 70},
   ];
 
+  const logiciel = [
+    {source: "./svg/visual-studio.svg",
+    valeur: 70}, 
+    {source: "./svg/eclipse.svg",
+    valeur: 70}, 
+    {source: "./svg/atom.svg",
+    valeur: 70}, 
+    {source: "./svg/azure.svg",
+    valeur: 70}, 
+    {source: "./svg/word.svg",
+    valeur: 70}, 
+    {source: "./svg/lightroom.svg",
+    valeur: 70}, 
+    {source: "./svg/photoshop.svg",
+    valeur: 70}
+  ];
+
 function App() { 
 
   //x={[-10, 0]} 1er : position depart, 2 : position arrivé
@@ -40,31 +56,42 @@ function App() {
     return (
       <div>
         <NavBar/>
-        <div style={{marginTop : "3%", display : 'flex', flexDirection: "column", alignItems : 'center', fontFamily: "'Source Code Pro', monospace"}}>
-            <div style={{display : 'flex'}}>
-              <h1 style={{fontWeight: "400"}}>{titre}</h1>
-              <Typical style={{fontWeight: "400", fontSize:"150%"}} steps={['Projet', 3000, 'Profil', 3000]} loop={Infinity} wrapper="h1"/>
-            </div>
-            
-          <h2 style={{fontWeight: "100"}}>Bonjour, bienvenue sur mon site web</h2>
+        <div id="header">
+          <div style={{marginTop : "3%", display : 'flex', flexDirection: "column", alignItems : 'center', fontFamily: "'Source Code Pro', monospace"}}>
+              <div style={{display : 'flex'}}>
+                <h1 style={{fontWeight: "400"}}>{titre}</h1>
+                <Typical style={{fontWeight: "400", fontSize:"150%"}} steps={['Projet', 3000, 'Profil', 3000]} loop={Infinity} wrapper="h1"/>
+              </div>
+              
+            <h2 style={{fontWeight: "100"}}>Bonjour, bienvenue sur mon site web</h2>
+          </div>
+          <BackgroundCircle nbCercle="10" />
+          <Profil/>
+          <ExpandMoreIcon style={{display : 'block', margin : "10% auto 5%", width: "60px", height: "60px"}}/>
         </div>
-        <BackgroundCircle nbCercle="10" />
-        <Profil/>
+        
         <ParallaxProvider>
-          <div style={{display : 'flex',justifyContent : 'center', paddingTop : "300px", paddingBottom:"500px"}}>
-          <Parallax y={[0, 0]} x={[-20, 0]}>
+          <div style={{display : 'flex', justifyContent : 'space-around', paddingBottom:"100px"}}>
+          <Parallax y={[0, -20]} x={[50, 0]}>
             <MediaControlCard/>
         </Parallax>
-        <Parallax y={[0, 100]}  x={[0, 35]}>
+        <Parallax y={[-10, -60]}>
             <MediaControlCard/>
         </Parallax>
-        <Parallax y={[0, -50]}  x={[-30, 0]}>
+        <Parallax y={[0, -20]}  x={[-50, 0]}>
             <MediaControlCard/>
         </Parallax>
           </div>
-
         </ParallaxProvider>
-        <Competences tab={langage}/>
+        <div style={{backgroundColor : "rgba(3, 219, 252, 0.3)", height : "200px"}}></div>
+        <ParallaxProvider>
+            <Parallax y={["-50px", "-180px"]}>
+              <div style={{display : 'flex', justifyContent : 'space-around'}}>
+                <Competences nom="Langages" tab={langage}/>
+                <Competences nom="Logiciels" tab={logiciel}/>
+              </div>
+            </Parallax>
+        </ParallaxProvider>
       </div>
     );
 }
