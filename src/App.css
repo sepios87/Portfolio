@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background : none;
+  border-radius: 30px;
+  color : rgb(3, 219, 252);
+  border : 1.5px solid rgb(3, 219, 252);
+}
+
+.nav-pills .nav-link{
+  color :  black;
+}
+
+.MuiIconButton-root:hover {
+  background-color: rgba(3, 219, 252, 0.5) !important;
+  color: rgb(255, 108, 92);
 }

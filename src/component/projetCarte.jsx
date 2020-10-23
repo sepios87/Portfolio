@@ -2,7 +2,7 @@ import React from 'react';
 import {Card,CardActionArea, CardContent, CardActions, CardMedia, Button, Typography}  from '@material-ui/core';
 
 
-export default function MediaControlCard() {
+export default function Carte() {
   return (
     <Card style={{maxWidth: "400px"}}>
       <CardActionArea>
@@ -16,7 +16,7 @@ export default function MediaControlCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button style={{display : 'block', margin : "auto"}} size="small" color="primary">En apprendre plus</Button>
+        <Button style={{padding : "1.5%", display : 'block', margin : "auto", color : "white", backgroundColor : "rgba(255, 108, 92, 0.75)"}} size="small">En apprendre plus</Button>
       </CardActions>
     </Card>
   );

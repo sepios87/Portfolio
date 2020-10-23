@@ -2,8 +2,8 @@ import React from 'react';
 import {Frame, motion, useAnimation} from 'framer'
 
 const number = [10];
-let couleur1 = "rgba(255,102,102,"+Math.round(Math.random()+0.2 * 100) / 100+")"
-let couleur2 = "rgba(102,255,153,"+Math.round(Math.random()+0.2 * 100) / 100+")"
+let couleur1 = "rgba(3, 219, 252,"+Math.round(Math.random()+0.2 * 100) / 100+")"
+let couleur2 = "rgba(255, 108, 92,"+Math.round(Math.random()+0.2 * 100) / 100+")"
 let couleur = [couleur1, couleur2]
 
 export default function BackgroundCircle(nbCercle) {

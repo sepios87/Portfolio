@@ -2,11 +2,13 @@ import React from 'react';
 import BackgroundCircle from './component/BackgroundCircle';
 import NavBar from './component/NavBar'
 import Profil from './component/Profil'
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import MediaControlCard from './component/projetCarte'
+import Test from './component/Test'
 import Typical from 'react-typical';
 import Competences from './component/Competences'
+import Projets from './component/Projets'
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {IconButton} from '@material-ui/core'
 import './App.css';
 
 const titre = "C:\\user\\Florian>"
@@ -52,6 +54,7 @@ const langage = [
 function App() { 
 
   //x={[-10, 0]} 1er : position depart, 2 : position arrivé
+  //       <Projets/>
   
     return (
       <div>
@@ -65,32 +68,22 @@ function App() {
               
             <h2 style={{fontWeight: "100"}}>Bonjour, bienvenue sur mon site web</h2>
           </div>
-          <BackgroundCircle nbCercle="10" />
+
+          <BackgroundCircle nbCercle="12" />
           <Profil/>
-          <ExpandMoreIcon style={{display : 'block', margin : "10% auto 5%", width: "60px", height: "60px"}}/>
         </div>
+        <IconButton onMouseEnter={() => {document.location.href="#projet";}} href="#projet" style={{display : "block", margin : "50px auto", width: "90px", height: "90px"}} variant="contained"><ExpandMoreIcon style={{width: "70px", height: "70px"}}/></IconButton>
         
-        <ParallaxProvider>
-          <div style={{display : 'flex', justifyContent : 'space-around', paddingBottom:"100px"}}>
-          <Parallax y={[0, -20]} x={[50, 0]}>
-            <MediaControlCard/>
-        </Parallax>
-        <Parallax y={[-10, -60]}>
-            <MediaControlCard/>
-        </Parallax>
-        <Parallax y={[0, -20]}  x={[-50, 0]}>
-            <MediaControlCard/>
-        </Parallax>
-          </div>
-        </ParallaxProvider>
+        <Projets/>
+
         <div style={{backgroundColor : "rgba(3, 219, 252, 0.3)", height : "200px"}}></div>
         <ParallaxProvider>
-            <Parallax y={["-50px", "-180px"]}>
-              <div style={{display : 'flex', justifyContent : 'space-around'}}>
-                <Competences nom="Langages" tab={langage}/>
-                <Competences nom="Logiciels" tab={logiciel}/>
-              </div>
-            </Parallax>
+        <Parallax y={[0, -50]}>
+          <div style={{display:"flex", justifyContent: "space-around"}}>
+            <Competences tab={langage} nom="Langages"/>
+            <Competences tab={logiciel} nom="Logiciels"/>
+          </div>
+        </Parallax>
         </ParallaxProvider>
       </div>
     );
