@@ -1,14 +1,18 @@
-import * as React from "react";
+import React from "react";
 import { Frame } from "framer";
 
 export default function Profil() {
 
+  const style={
+    display : 'flex', 
+    justifyContent : 'center', 
+    height:'250px', 
+    marginTop : "2%"
+  }
+
   return (
-    <div style={{display : 'flex', justifyContent : 'center', height:'250px', marginTop : "2%"}}>
+    <div style={style}>
         <Frame
-      /*drag
-      dragConstraints={{ velocity : 2, top: -window.innerHeight/2, left: -window.innerWidth/2, right: window.innerWidth/2-100, y :0, bottom : window.innerHeight/2-100 }}
-      */
       whileHover={{ borderRadius: 100, rotate : 8}}
       shadow="10px 5px 5px rgba(255, 255, 255, 0.1)"
       size={250}

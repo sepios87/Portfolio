@@ -26,9 +26,9 @@ function barreProgression(sourceImg, valeur, i){
 export default function Competences(props){
   
     return (
-        <Card style={{width: "25%"}}>
+      <Card style={{width : "100%", marginBottom: "50px"}}>
         <CardActionArea>
-          <CardContent>
+          <CardContent style={{width : "100%"}}>
             <Typography style={{textAlign : "center"}} gutterBottom variant="h5" component="h2">{props.nom}</Typography>
               <div>
               {props.tab.map((elem, i) => (
