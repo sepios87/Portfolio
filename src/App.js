@@ -14,7 +14,7 @@ function App() {
     return (
       <BrowserRouter>
 
-			<Route exact path='/photo' component={() => <Header job="photographe" lien="/" image="./images/profil.jpg"/>}/>
+			<Route exact path='/photo' component={() => <Header job="photographe" image="./images/profil.jpg"/>}/>
 			<Route exact path='/' component={() => <Header job="developpeur" lien="/photo" image="./images/profilDessin.jpg"/>}/>
 			<Route exact path='/photo' component={Carousel}/>
 

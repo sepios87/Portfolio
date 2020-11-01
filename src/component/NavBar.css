@@ -12,15 +12,3 @@
 .nav-item{
     z-index: 10;
   }
-
-@media screen and (max-width: 992px) {
-  
-    .nav-item{
-        font-size: 60%;
-      }
-
-    .justify-content-end nav nav-pills{
-        display: flex;
-        justify-content: center !important;
-    }
-}
