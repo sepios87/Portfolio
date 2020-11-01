@@ -1,0 +1,32 @@
+#bio{
+    display : flex;
+    justify-content : space-around;
+    width : 100%;
+  }
+  
+  #carteBio{
+    display : flex
+  }
+
+  #txtBio{
+    margin : 20px;
+    width : 300px;
+  }
+
+  #timeLine{
+    width : 600px;
+  }
+
+@media screen and (max-width: 992px) {
+    #bio{
+        flex-direction: column;
+      }
+
+    #timeLine, #imgBio{
+        display : none;
+    }
+    
+    #txtBio{
+        width : auto;
+    }
+}

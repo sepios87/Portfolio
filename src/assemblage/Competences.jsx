@@ -3,7 +3,7 @@ import Skill from '../component/Skill'
 import ParallaxCache from '../component/ParallaxCache';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Fade from 'react-reveal/Fade';
-
+import './Competences.css'
 
 const langage = [
     {source: "./svg/030-html-5.svg",

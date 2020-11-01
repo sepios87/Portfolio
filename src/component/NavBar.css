@@ -1,0 +1,26 @@
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background : none;
+    border-radius: 30px;
+    color : rgb(3, 219, 252);
+    border : 1.5px solid rgb(3, 219, 252);
+  }
+
+.nav-pills .nav-link{
+    color :  black;
+}
+
+.nav-item{
+    z-index: 10;
+  }
+
+@media screen and (max-width: 992px) {
+  
+    .nav-item{
+        font-size: 60%;
+      }
+
+    .justify-content-end nav nav-pills{
+        display: flex;
+        justify-content: center !important;
+    }
+}

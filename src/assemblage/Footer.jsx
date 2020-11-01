@@ -4,6 +4,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailIcon from '@material-ui/icons/Mail'; 
 import { Frame } from "framer"
+import Tooltip from '@material-ui/core/Tooltip';
+import './Footer.css'
 
 export default function Footer (){
 
@@ -28,22 +30,30 @@ export default function Footer (){
                 <div id ="footerIcon">
                 <div>
                     <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{type: "spring", duration : 1.8, loop: Infinity}}>
+                    <Tooltip title="+33 6 83 49 80 56" arrow>
                         <a style={styleA} href="tel:+33683498056"><PhoneIcon style={styleIcon}/></a>
+                    </Tooltip>
                     </Frame> 
                 </div>
                 <div>
                     <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{delay : 0.25, type: "spring", duration : 1.8, loop: Infinity}}>
-                        <a style={styleA} href="mailto:sepios.corp@gmail.com"><MailIcon style={styleIcon}/></a>   
+                        <Tooltip title="sepios.corp@gmail.com" arrow>
+                            <a style={styleA} href="mailto:sepios.corp@gmail.com"><MailIcon style={styleIcon}/></a>   
+                        </Tooltip>
                     </Frame>
                 </div>
                <div>
                     <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{delay : 0.50, type: "spring", duration : 1.8, loop: Infinity}}>
-                        <a rel="noopener noreferrer" style={styleA} target="_blank" href="https://www.linkedin.com/in/florian-toribio/"><LinkedInIcon style={styleIcon}/></a>
+                        <Tooltip title="florian toribio" arrow>
+                            <a rel="noopener noreferrer" style={styleA} target="_blank" href="https://www.linkedin.com/in/florian-toribio/"><LinkedInIcon style={styleIcon}/></a>
+                        </Tooltip> 
                     </Frame>
                </div>
                <div>
                     <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{delay : 0.75, type: "spring", duration : 1.8, loop: Infinity}}>
-                        <a rel="noopener noreferrer" style={styleA} href="https://github.com/sepios87" target="_blank"><GitHubIcon style={styleIcon}/></a>   
+                        <Tooltip title="sepios87" arrow>
+                            <a rel="noopener noreferrer" style={styleA} href="https://github.com/sepios87" target="_blank"><GitHubIcon style={styleIcon}/></a>   
+                        </Tooltip>
                     </Frame>     
                </div>    
                 </div>

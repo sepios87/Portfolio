@@ -1,0 +1,22 @@
+#competences{
+    width: 100%;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-around;
+  }
+  
+  .compDiv{
+    width : 30%;
+  }
+
+  @media screen and (max-width: 992px) {
+    #competences{
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .compDiv{
+        width : 80%;
+        margin : auto;
+      }
+  }

@@ -3,7 +3,7 @@ import {Frame, motion, useAnimation} from 'framer'
 
 export default function BackgroundCircle(props) {
 
-  const coucou = useAnimation();
+  const monAnim = useAnimation();
 
   let cercle = [];
   let couleur; 
@@ -17,7 +17,7 @@ export default function BackgroundCircle(props) {
     }
     
     cercle.push(
-      <motion.div key={i} transition={{type: "spring", damping: 3, stiffness: Math.random()*100}} animate={coucou} style=
+      <motion.div key={i} transition={{type: "spring", damping: 3, stiffness: Math.random()*100}} animate={monAnim} style=
       {{position : 'absolute', top : Math.random()*(window.screen.height)-150+'px', right : Math.random()*(window.screen.width)-150+'px'}} >
         <Frame className="cercle" style={{borderRadius: 120, backgroundColor : couleur}} size={30+Math.random()*100}/>
       </motion.div>
@@ -31,8 +31,8 @@ export default function BackgroundCircle(props) {
           let offsetX = event.clientX - window.innerWidth/2
           let offsetY = event.clientY -  window.innerHeight/2
 
-          coucou.start({ x : offsetX/10 })
-          coucou.start({ y : offsetY/10 })
+          monAnim.start({ x : offsetX/10 })
+          monAnim.start({ y : offsetY/10 })
           }
        }> 
             {cercle}

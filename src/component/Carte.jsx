@@ -14,7 +14,7 @@ export default function Carte(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <a style={{margin : "15px auto"}} className="myButton" href="#">En apprendre plus</a>
+        <a style={{margin : "15px auto"}} className="myButton" rel="noopener noreferrer" target="_blank" href={props.lien}>Découvrir</a>
         </CardActions>
       </Card>
     </Zoom>

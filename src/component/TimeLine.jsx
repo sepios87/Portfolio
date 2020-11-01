@@ -7,10 +7,6 @@ import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 
 export default function TimeLine() {
 
-    const papier={
-        padding: '4%',
-    }
-
   return (
     <Timeline align="alternate">
       <TimelineItem>
@@ -24,9 +20,9 @@ export default function TimeLine() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={papier}>
+          <Paper elevation={3} style={{padding: '4%'}}>
             <h5>Lycée Turgot</h5>
-            <p>Bac Scientifique mention Bien.</p>
+            <p>Bac Scientifique Mention Bien.</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -41,9 +37,9 @@ export default function TimeLine() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={papier}>
+          <Paper elevation={3} style={{padding: '4%'}}>
             <h5>IUT Informatique du Limousin</h5>
-            <p>Coder c'est cool, développer c'est mieux !</p>
+            <p>Coder, c'est cool; développer, c'est mieux !</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -54,8 +50,8 @@ export default function TimeLine() {
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={papier}>
-            <h5>Bientot en colaboration avec vous !</h5>
+          <Paper elevation={3} style={{padding: '4%'}}>
+            <h5>Bientôt en collaboration avec vous !</h5>
             <p>Réalisons vos projets ensemble.</p>
           </Paper>
         </TimelineContent>

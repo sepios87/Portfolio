@@ -1,0 +1,28 @@
+#projetGroupe{
+    padding-top: 15%;
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    margin-bottom : 5%;
+  }
+  
+  .projet{
+    width: 100%;
+    display : flex;
+    justify-content: space-around;
+  }
+
+@media screen and (max-width: 992px) {
+    .projet{
+        flex-direction: column;
+        width: 80%;
+      }
+      
+    #projetGroupe div{
+        margin-top: 30px;
+    }
+
+    .projet div{
+        margin: auto;
+    }
+}
