@@ -25,7 +25,7 @@ function App() {
 				<Route path='/' component={() => matches ? <NavBar/> : <Burger/>}/>
 
 				<Route exact path='/photo' component={() => <Header job="photographe" image="./images/profil.jpg"/>}/>
-				<Route exact path='/' component={() => <Header job="developpeur" lien="/photo" image="./images/profilDessin.jpg"/>}/>
+				<Route exact path='/' component={() => <Header job="developpeur" lien="/photo" image="./images/profilGlish.gif"/>}/>
 			</div>
 			
 			<div id="body">
