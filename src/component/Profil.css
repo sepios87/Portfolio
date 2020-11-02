@@ -28,6 +28,13 @@
     transition: opacity 1s ease-in-out;
     animation: pulseRed 1.5s infinite;
   }
+
+  #profilLien{
+    display : flex; 
+    justify-content : center; 
+    height: 250px;
+    margin-top : 2%;
+  }
   
   @keyframes pulseBlue {
     0% {

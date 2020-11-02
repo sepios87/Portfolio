@@ -2,6 +2,7 @@ import React from 'react';
 import {LinearProgress} from '@material-ui/core';
 import { lighten, withStyles } from '@material-ui/core/styles';
 import {Card,CardActionArea, CardContent, Typography}  from '@material-ui/core';
+import Bounce from 'react-reveal/Bounce';
 
 const BorderLinearProgress = withStyles({
   root: {
@@ -26,6 +27,7 @@ function barreProgression(sourceImg, valeur, i){
 export default function Competences(props){
   
     return (
+      <Bounce>
       <Card style={{width : "100%", marginBottom: "50px"}}>
         <CardActionArea>
           <CardContent style={{width : "100%"}}>
@@ -38,6 +40,7 @@ export default function Competences(props){
           </CardContent>
         </CardActionArea>
       </Card>
+      </Bounce>
     );
 
 }

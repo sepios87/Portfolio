@@ -2,8 +2,7 @@ import React from 'react'
 import Skill from '../component/Skill'
 import ParallaxCache from '../component/ParallaxCache';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import Fade from 'react-reveal/Fade';
-import './Competences.css'
+import './CompetencesDev.css'
 
 const langage = [
     {source: "./svg/030-html-5.svg",
@@ -49,14 +48,13 @@ const langage = [
   ];
 
 
-export default function Competences(){
+export default function CompetencesDev(){
 
     return (
         <div>
           <ParallaxProvider>
             <ParallaxCache/>
             <Parallax y={[0, -10]}>
-            <Fade bottom>
               <div id="competences">
                 <div className="compDiv">
                   <Skill tab={langage} nom="Langages"/>
@@ -66,7 +64,6 @@ export default function Competences(){
                   <Skill tab={framwork} nom="Frameworks"/>
                 </div>
               </div>
-              </Fade>
             </Parallax>
           </ParallaxProvider>
         </div>

@@ -20,7 +20,7 @@ export default function BackgroundCircle(props) {
       cercle.push(
         <motion.div key={i} transition={{duration: 10, loop: Infinity}} animate={{x : [randx, Math.random()*80, Math.random()*80, randx], y : [randy, Math.random()*80, Math.random()*80, randy]}} 
         style={{position : 'absolute', top : (Math.random()*500)-250+'px', right : (Math.random()*500)-250+'px'}} >
-          <Frame className="cercle" style={{zIndex : Math.random()*3-4, borderRadius: 120, backgroundColor : couleur}} size={20+Math.random()*100}/>
+          <Frame className="cercle" style={{zIndex : Math.random()*4-4, borderRadius: 120, backgroundColor : couleur}} size={20+Math.random()*100}/>
         </motion.div>
       );
     }    

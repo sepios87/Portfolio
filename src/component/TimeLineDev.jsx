@@ -20,7 +20,7 @@ export default function TimeLine() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{padding: '4%'}}>
+          <Paper elevation={3} style={{padding: '3%'}}>
             <h5>Lycée Turgot</h5>
             <p>Bac Scientifique Mention Bien.</p>
           </Paper>
@@ -37,7 +37,7 @@ export default function TimeLine() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{padding: '4%'}}>
+          <Paper elevation={3} style={{padding: '3%'}}>
             <h5>IUT Informatique du Limousin</h5>
             <p>Coder, c'est cool; développer, c'est mieux !</p>
           </Paper>
@@ -52,7 +52,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} style={{padding: '4%'}}>
             <h5>Bientôt en collaboration avec vous !</h5>
-            <p>Réalisons vos projets ensemble.</p>
+            <p>Réalisons vos projets ensemble</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>

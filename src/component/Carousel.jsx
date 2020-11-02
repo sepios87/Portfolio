@@ -1,28 +1,50 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel' 
+import React, {useState} from 'react';
+import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import './Carousel.css'
 
-const tab=["/photos/1.jpg", "/photos/2.jpg",  "/photos/3.jpg",  "/photos/4.jpg", "/photos/5.jpg"]
+export default function AutoRotatingCarouselModal (props) {
 
+    const matches = useMediaQuery('(min-width:992px)');
 
-export default function carousel(){
+    const [handleOpen, setHandleOpen] = useState({ open: false });
 
-    const items = (image, i) =>{
+    const styleUp={
+        backgroundColor: "rgba(3, 219, 252, 0.3)", 
+        height : "90%" 
+    }
+
+    const styleDown={
+        backgroundColor: "rgba(3, 219, 252, 0.4)", 
+        height : "100%"
+    }
+
+    const Item = (props2) => {
         return (
-            <Carousel.Item key={i} interval={1000}>
-                <img style={{height : "500px", display : "block", margin : "auto"}}
-                src={image}
-                alt="First slide"
-                />
-            </Carousel.Item>
-        );
+            <Slide
+              media={<img style={{width : "85%"}} src={props2.source} />}
+              mediaBackgroundStyle={styleUp}
+              style={styleDown}
+              title = ""
+              subtitle = ""
+            />
+        )
     }
 
     return (
-        <Carousel id="mesProjets" style={{width : "80%", display:"block", margin : "auto"}}>
-                {tab.map((image, i) => (
-                    items(image, i)
-                ))}
-        </Carousel>
-    );
+        <div>
+          <a onClick={() => setHandleOpen({ open: true })}><div className="myButton" style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>Voir</div></a>
+          <AutoRotatingCarousel
+            label="Fermer"
+            mobile={!matches}
+            open={handleOpen.open}
+            onClose={() => setHandleOpen({ open: false })}
+            onStart={() => setHandleOpen({ open: false })}
+            autoplay={false}
+            style={{ position: "absolute" }}
+          >
+              {props.photo.map((item, i) => <Item key={i} source={item}/>)}
+          </AutoRotatingCarousel>
+        </div>
+      );
 }
