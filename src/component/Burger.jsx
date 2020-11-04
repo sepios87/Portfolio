@@ -4,7 +4,7 @@ import './Burger.css'
 export default function Burger(){
 
 return (
-    <nav>
+    <nav id="home">
         <div id="menuToggle">
             <input type="checkbox" />
             <span></span>

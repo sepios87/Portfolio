@@ -3,12 +3,16 @@ import Bio from '../component/Bio'
 import SliderPhoto from '../component/SliderPhoto'
 import TimeLinePhoto from "../component/TimeLinePhoto"
 import BannerParallax from '../component/BannerParallax';
+import Header from '../component/Header'
 
 export default function Photo() { 
 
+    const job= "photographe"
+
     return (
         <div>
-            <Bio timeLine={<TimeLinePhoto/>} job="Photographe" texte=" Etudiant en IUT Informatique, je suis aussi auto-entrepreneur 
+            <Header job={job}  lien="/dev" image="./images/profil.jpg"/>
+            <Bio timeLine={<TimeLinePhoto/>} job={job} texte=" Etudiant en IUT Informatique, je suis aussi auto-entrepreneur 
                                 en photographie et en développement. 
                                 La photo est devenue une passion dévorante pour moi depuis le collège.
                                 Des fleurs en passant par le payage pour finir par les portraits, j'ai touché 

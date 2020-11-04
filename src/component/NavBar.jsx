@@ -5,7 +5,7 @@ import './NavBar.css'
 export default function NavBar(){
  
     return (
-        <Nav style={{padding : "1%"}} variant="pills" className="justify-content-end" defaultActiveKey="#home">
+        <Nav id="home" style={{padding : "1%"}} variant="pills" className="justify-content-end" defaultActiveKey="#home">
           <Nav.Item>
             <Nav.Link href="#home">Accueil</Nav.Link>
           </Nav.Item>

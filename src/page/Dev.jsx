@@ -4,12 +4,16 @@ import Bio from '../component/Bio'
 import CompetencesDev from '../component/CompetencesDev';
 import TimeLineDev from "../component/TimeLineDev"
 import BannerParallax from '../component/BannerParallax';
+import Header from '../component/Header'
 
 export default function Dev() { 
 
+    const job= "Développeur"
+
     return (
         <div>
-            <Bio job="Développeur" timeLine={<TimeLineDev/>} texte=" Etudiant en IUT Informatique, je suis aussi auto-entrepreneur 
+            <Header job={job} lien="/photo" image="./images/profilGlish.gif"/>
+            <Bio job={job} timeLine={<TimeLineDev/>} texte=" Etudiant en IUT Informatique, je suis aussi auto-entrepreneur 
                                         en développement et photographie. 
                                         J'apprécie beaucoup le contact humain et aime aider les 
                                         gens à trouver des solutions adaptées à leurs besoins 

@@ -31,8 +31,12 @@
     top : 220px;
     background-color: "rgba(0, 0, 0, 0)";
     color : rgb(3, 219, 252);
-    height: 50px;
     padding: 5%;
+    transition: all .2s ease-in-out;
+  }
+
+  .iconProfil:hover{
+    padding: 3%;
   }
 
   #profilLien{
