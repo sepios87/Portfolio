@@ -1,7 +1,7 @@
 import React from 'react';
 import {Frame, motion, useAnimation} from 'framer'
 
-export default function BackgroundCircle(props) {
+function BackgroundCircle(props) {
 
   const monAnim = useAnimation();
 
@@ -39,3 +39,5 @@ export default function BackgroundCircle(props) {
       </Frame>
   );
 }
+
+export default React.memo(BackgroundCircle) //optimise le cache

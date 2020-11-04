@@ -1,6 +1,4 @@
 import React from 'react'
-import CodeIcon from '@material-ui/icons/Code';
-import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import './Burger.css'
 
 export default function Burger(){

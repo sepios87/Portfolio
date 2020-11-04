@@ -1,8 +1,8 @@
 import React from 'react';
 import {Card, CardContent, CardMedia, Typography}  from '@material-ui/core';
-import ParallaxCache from '../component/ParallaxCache';
+import ParallaxCache from './ParallaxCache';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import BackBubble from '../component/BackBubble'
+import BackBubble from './BackBubble'
 import Rotate from 'react-reveal/Rotate';
 import './Bio.css'
 

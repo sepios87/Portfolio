@@ -19,7 +19,8 @@ export default function sliderPhoto(){
                     <Carousel.Item key={key} style={{maxHeight : "500px"}}>
                         <img  
                             style={{width : "100%"}}
-                            src={value[0]}/>
+                            src={value[0]}
+                            alt = {value[0]}/>
                     <Carousel.Caption>
                         <h3 style={{marginBottom : "20%", fontSize : "3.6em"}}>{key}</h3>
                         <CarouselPopUp photo={value} />

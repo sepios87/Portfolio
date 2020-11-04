@@ -1,9 +1,9 @@
 import React from 'react'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import Carte from '../component/Carte'
-import ParallaxCache from '../component/ParallaxCache'
+import Carte from './Carte'
+import ParallaxCache from './ParallaxCache'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import BackBubble from '../component/BackBubble'
+import BackBubble from './BackBubble'
 import './Projets.css'
 
 export default function Projets(){

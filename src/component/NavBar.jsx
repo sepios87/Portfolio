@@ -1,8 +1,5 @@
 import React from 'react'
 import {Nav} from 'react-bootstrap'
-import { Link } from 'react-router-dom';
-import CodeIcon from '@material-ui/icons/Code';
-import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import './NavBar.css'
  
 export default function NavBar(){

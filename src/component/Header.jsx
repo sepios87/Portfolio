@@ -1,15 +1,13 @@
 import React from 'react'
-import BackgroundCircle from '../component/BackgroundCircle'
-import Profil from '../component/Profil'
+import BackgroundCircle from './BackgroundCircle'
+import Profil from './Profil'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import {IconButton} from '@material-ui/core'
 import Typical from 'react-typical';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import './Header.css'
 
-
 export default function Header(props){
-
 
   let lien = props.lien !== undefined ? props.lien : "/";
 

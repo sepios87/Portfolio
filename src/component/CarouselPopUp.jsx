@@ -22,7 +22,7 @@ export default function AutoRotatingCarouselModal (props) {
     const Item = (props2) => {
         return (
             <Slide
-              media={<img style={{width : "85%"}} src={props2.source} />}
+              media={<img style={{width : "85%"}} src={props2.source} alt = {props2.source} />}
               mediaBackgroundStyle={styleUp}
               style={styleDown}
               landscape = {true}
@@ -34,7 +34,7 @@ export default function AutoRotatingCarouselModal (props) {
 
     return (
         <div>
-          <a onClick={() => setHandleOpen({ open: true })}><div className="myButton" style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>Voir</div></a>
+          <button style={{backgroundColor : "rgba(0, 0, 0, 0)", border  :"none"}} onClick={() => setHandleOpen({ open: true })}><div className="myButton" style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>Voir</div></button>
           <AutoRotatingCarousel
             label="Fermer"
             mobile={!matches}

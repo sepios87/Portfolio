@@ -1,6 +1,6 @@
 import React from 'react'
-import Skill from '../component/Skill'
-import ParallaxCache from '../component/ParallaxCache';
+import Skill from './Skill'
+import ParallaxCache from './ParallaxCache';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import './CompetencesDev.css'
 

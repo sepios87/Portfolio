@@ -1,7 +1,7 @@
 import React from 'react';
 import {Frame, motion} from 'framer'
 
-export default function BackgroundCircle(props) {
+function BackBubble(props) {
 
     let cercle = [];
     let couleur; 
@@ -18,7 +18,7 @@ export default function BackgroundCircle(props) {
       const randy = Math.random()*100;
       
       cercle.push(
-        <motion.div key={i} transition={{duration: 10, loop: Infinity}} animate={{x : [randx, Math.random()*80, Math.random()*80, randx], y : [randy, Math.random()*80, Math.random()*80, randy]}} 
+        <motion.div key={i} transition={{duration: 10, loop: Infinity}} animate={{x : [randx, Math.random()*100, Math.random()*100, randx], y : [randy, Math.random()*100, Math.random()*100, randy]}} 
         style={{position : 'absolute', top : (Math.random()*500)-250+'px', right : (Math.random()*500)-250+'px'}} >
           <Frame className="cercle" style={{zIndex : Math.random()*4-4, borderRadius: 120, backgroundColor : couleur}} size={20+Math.random()*100}/>
         </motion.div>
@@ -31,3 +31,5 @@ export default function BackgroundCircle(props) {
         </Frame>
     );
   }
+
+export default React.memo(BackBubble)
