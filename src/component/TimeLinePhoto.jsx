@@ -22,7 +22,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>
             <h5>Décourverte de la photographie</h5>
-            <p>A travers la natuture, les fleurs et les paysages la photo commence à me passioner</p>
+            <p>A travers la nature, les fleurs et les paysages la photo commence à me passionner</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>

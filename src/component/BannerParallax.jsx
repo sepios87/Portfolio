@@ -8,7 +8,7 @@ export default function BannerParallax(props){
             <ParallaxProvider>
 				<ParallaxCache/>
 				<ParallaxBanner
-					layers={[{image: props.lien, amount: 0.5, expanded : false}]}
+					layers={[{image: props.lien, amount: 0.6, expanded : false}]}
 					style={{height: '320px', margin : "180px 0"}}
 				/>
 			</ParallaxProvider>

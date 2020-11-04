@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import './Carousel.css'
+import './CarouselPopUp.css'
 
 export default function AutoRotatingCarouselModal (props) {
 
@@ -25,6 +25,7 @@ export default function AutoRotatingCarouselModal (props) {
               media={<img style={{width : "85%"}} src={props2.source} />}
               mediaBackgroundStyle={styleUp}
               style={styleDown}
+              landscape = {true}
               title = ""
               subtitle = ""
             />
@@ -41,7 +42,7 @@ export default function AutoRotatingCarouselModal (props) {
             onClose={() => setHandleOpen({ open: false })}
             onStart={() => setHandleOpen({ open: false })}
             autoplay={false}
-            style={{ position: "absolute" }}
+            style={{ position: "absolute", width : "80%" }}
           >
               {props.photo.map((item, i) => <Item key={i} source={item}/>)}
           </AutoRotatingCarousel>
