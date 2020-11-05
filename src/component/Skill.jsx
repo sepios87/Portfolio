@@ -3,6 +3,7 @@ import {LinearProgress} from '@material-ui/core';
 import { lighten, withStyles } from '@material-ui/core/styles';
 import {Card,CardActionArea, CardContent, Typography}  from '@material-ui/core';
 import Bounce from 'react-reveal/Bounce';
+import useSound from 'use-sound';
 
 const BorderLinearProgress = withStyles({
   root: {
@@ -25,11 +26,16 @@ function barreProgression(sourceImg, valeur, i){
 }
 
 export default function Competences(props){
+
+  const [play] = useSound(
+    './musique/click.mp3',
+    { volume: 0.55 }
+  );
   
     return (
       <Bounce>
       <Card style={{width : "100%", marginBottom: "50px"}}>
-        <CardActionArea>
+        <CardActionArea onClick={() => {play();}}>
           <CardContent style={{width : "100%"}}>
             <Typography style={{textAlign : "center"}} gutterBottom variant="h5" component="h2">{props.nom}</Typography>
               <div>

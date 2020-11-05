@@ -1,59 +1,99 @@
 #profil{
-    animation: disp 1.5s;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  #profil:hover{
+  -webkit-animation: disp 1.5s;
+          animation: disp 1.5s;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#profil:hover{
+  opacity: 0;
+}
+
+@-webkit-keyframes disp {
+  from {
     opacity: 0;
   }
-  
-  @keyframes disp {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
+  to {
+    opacity: 1;
   }
-  
-  .iconProfil{
-    border-radius : 50%;
-    transition: opacity 1s ease-in-out;
-    animation: pulseRed 1.5s infinite;
-    position : relative;
-    top : 220px;
-    background-color: "rgba(0, 0, 0, 0)";
-    color : rgb(3, 219, 252);
-    padding: 5%;
-    transition: all 2s ease-in-out;
+}
+
+@keyframes disp {
+  from {
+    opacity: 0;
   }
 
-  .iconProfil:hover{
-    padding: 3%;
+  to {
+    opacity: 1;
   }
+}
 
+.iconProfil{
+  border-radius : 50%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -webkit-animation: pulseRed 1.5s infinite;
+          animation: pulseRed 1.5s infinite;
+  position : relative;
+  top : 220px;
+  background-color: "rgba(0, 0, 0, 0)";
+  color : rgb(3, 219, 252);
+  padding: 5%;
+  -webkit-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.iconProfil:hover{
+  padding: 3%;
+}
+
+#profilLien{
+  display : -webkit-box;
+  display : -ms-flexbox;
+  display : flex; 
+  -webkit-box-pack : center; 
+      -ms-flex-pack : center; 
+          justify-content : center; 
+  height: 250px;
+  margin-top : 1%;
+}
+
+@-webkit-keyframes pulseRed {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 108, 92, 0.4);
+            box-shadow: 0 0 0 0 rgba(255, 108, 92, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(255, 108, 92, 0);
+              box-shadow: 0 0 0 20px rgba(255, 108, 92, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 108, 92, 0);
+              box-shadow: 0 0 0 0 rgba(255, 108, 92, 0);
+  }
+}
+
+@keyframes pulseRed {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 108, 92, 0.4);
+            box-shadow: 0 0 0 0 rgba(255, 108, 92, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(255, 108, 92, 0);
+              box-shadow: 0 0 0 20px rgba(255, 108, 92, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 108, 92, 0);
+              box-shadow: 0 0 0 0 rgba(255, 108, 92, 0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
   #profilLien{
-    display : flex; 
-    justify-content : center; 
-    height: 250px;
-    margin-top : 1%;
+      margin-top: 0;
   }
-  
-  @keyframes pulseRed {
-    0% {
-      box-shadow: 0 0 0 0 rgba(255, 108, 92, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 20px rgba(255, 108, 92, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 108, 92, 0);
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    #profilLien{
-        margin-top: 0;
-    }
-  }
+}

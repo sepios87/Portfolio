@@ -19,14 +19,16 @@ export default function Header(props){
 
   let lien = props.lien !== undefined ? props.lien : "/";
 
-  const txt1 = 'C:\\Florian\\'+props.job+'>projets'
-  const txt2 = 'C:\\Florian\\'+props.job+'>profil'
+  const txt = 'C:\\Florian\\'+props.job+'>';
 
     return (
           <div>
           <BackgroundCircle nbCercle={12} />
             <div id="blocTexte">
-              <Typical steps={[txt1, 3000, txt2 , 3000]} loop={Infinity} wrapper="h1"/>
+              <div style={{display : "flex"}}>
+                <h1 style={{marginTop : "2px"}}>{txt}</h1>
+                <Typical steps={["profil", 3000, "projets" , 3000]} loop={Infinity} wrapper="h1"/>
+              </div>
               <h2 id="sousTitre">Vous entrez dans mon monde</h2>
             <Profil lien={lien} image={props.image} />
           </div>

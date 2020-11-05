@@ -1,32 +1,40 @@
 #bio{
-    display : flex;
-    justify-content : space-around;
-    width : 100%;
-  }
-  
-  #carteBio{
-    display : flex
-  }
+  display : -webkit-box;
+  display : -ms-flexbox;
+  display : flex;
+  -ms-flex-pack : distribute;
+      justify-content : space-around;
+  width : 100%;
+}
 
-  #txtBio{
-    margin : 20px;
-    width : 300px;
-  }
+#carteBio{
+  display : -webkit-box;
+  display : -ms-flexbox;
+  display : flex
+}
 
-  #timeLine{
-    width : 600px;
-  }
+#txtBio{
+  margin : 20px;
+  width : 300px;
+}
+
+#timeLine{
+  width : 600px;
+}
 
 @media screen and (max-width: 992px) {
-    #bio{
-        flex-direction: column;
-      }
+  #bio{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
 
-    #timeLine, #imgBio{
-        display : none;
-    }
-    
-    #txtBio{
-        width : auto;
-    }
+  #timeLine, #imgBio{
+      display : none;
+  }
+  
+  #txtBio{
+      width : auto;
+  }
 }
