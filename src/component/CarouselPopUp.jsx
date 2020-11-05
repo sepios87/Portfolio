@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 import './CarouselPopUp.css'
 
 export default function AutoRotatingCarouselModal (props) {

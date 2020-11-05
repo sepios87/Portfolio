@@ -1,12 +1,21 @@
 import React from 'react';
 import {Card,CardActionArea, CardContent, CardActions, CardMedia, Typography}  from '@material-ui/core';
 import Zoom from 'react-reveal/Zoom';
+import useSound from 'use-sound';
+
+import Button from './Button'
 
 export default function Carte(props) {
+
+  const [play] = useSound(
+    './musique/click.mp3',
+    { volume: 0.55 }
+  );
+
   return (
     <Zoom>
       <Card style={{maxWidth: "400px"}}>
-        <CardActionArea>
+        <CardActionArea onClick={() => {play();}} >
           <CardMedia style={{height: "160px"}} image={props.source} title="projet"/>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2" style={{textAlign : "center"}}>{props.nom}</Typography>
@@ -14,7 +23,7 @@ export default function Carte(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <a style={{margin : "15px auto"}} className="myButton" rel="noopener noreferrer" target="_blank" href={props.lien}>Découvrir</a>
+        <Button href={props.lien}>Découvrir</Button>
         </CardActions>
       </Card>
     </Zoom>

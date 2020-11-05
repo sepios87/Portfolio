@@ -1,7 +1,7 @@
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link, #navJob{
-    background : none;
+    background : none !important;
     border-radius: 30px;
-    color : rgb(3, 219, 252);
+    color : rgb(3, 219, 252) !important;
     border : 1.5px solid rgb(3, 219, 252);
     text-decoration: none;
     font-size: 1em;

@@ -1,7 +1,9 @@
 import React from 'react'
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+
 import Skill from './Skill'
 import ParallaxCache from './ParallaxCache';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+
 import './CompetencesDev.css'
 
 const langage = [

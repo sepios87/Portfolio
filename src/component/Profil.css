@@ -1,13 +1,10 @@
 #profil{
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
+    animation: disp 1.5s;
+    transition: opacity 0.3s ease-in-out;
   }
   
   #profil:hover{
     opacity: 0;
-    animation: none;
   }
   
   @keyframes disp {
@@ -29,7 +26,7 @@
     background-color: "rgba(0, 0, 0, 0)";
     color : rgb(3, 219, 252);
     padding: 5%;
-    transition: all .2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
 
   .iconProfil:hover{

@@ -1,5 +1,6 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel' 
+import Carousel from 'react-bootstrap/Carousel'
+ 
 import CarouselPopUp from './CarouselPopUp'
 import BackBubble from './BackBubble'
  

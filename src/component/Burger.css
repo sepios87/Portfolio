@@ -43,9 +43,6 @@
    -webkit-touch-callout: none;
  }
  
- /*
-  * Just a quick hamburger
-  */
  #menuToggle span
  {
     -webkit-box-shadow: -6px 8px 10px 0px rgba(0,0,0,0.13); 
