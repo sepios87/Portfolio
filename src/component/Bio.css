@@ -22,6 +22,12 @@
   width : 600px;
 }
 
+@media screen and (max-width: 1450px) {
+  #imgBio{
+    display : none;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #bio{
       -webkit-box-orient: vertical;

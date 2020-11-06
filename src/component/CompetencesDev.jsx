@@ -53,7 +53,6 @@ const langage = [
 export default function CompetencesDev(){
 
     return (
-        <div>
           <ParallaxProvider>
             <ParallaxCache/>
             <Parallax y={[0, -10]}>
@@ -68,6 +67,5 @@ export default function CompetencesDev(){
               </div>
             </Parallax>
           </ParallaxProvider>
-        </div>
     );
 }

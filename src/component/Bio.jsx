@@ -1,7 +1,10 @@
 import React from 'react';
-import {Card, CardContent, CardMedia, Typography}  from '@material-ui/core';
-import ParallaxCache from './ParallaxCache';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import ParallaxCache from './ParallaxCache';
 import Rotate from 'react-reveal/Rotate';
 
 import BackBubble from './BackBubble'

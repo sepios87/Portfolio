@@ -34,7 +34,7 @@ export default function AutoRotatingCarouselModal (props) {
     }
 
     return (
-        <div>
+        <>
           <button style={{backgroundColor : "rgba(0, 0, 0, 0)", border  :"none"}} onClick={() => setHandleOpen({ open: true })}><div className="myButton" style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>Voir</div></button>
           <AutoRotatingCarousel
             label="Fermer"
@@ -43,10 +43,10 @@ export default function AutoRotatingCarouselModal (props) {
             onClose={() => setHandleOpen({ open: false })}
             onStart={() => setHandleOpen({ open: false })}
             autoplay={false}
-            style={{ position: "absolute", width : "80%" }}
+            style={{ position: "absolute", width : "100%" }}
           >
-              {props.photo.map((item, i) => <Item key={i} source={item}/>)}
+              {props.photo.map((item) => <Item key={item.id} source={item}/>)}
           </AutoRotatingCarousel>
-        </div>
+        </>
       );
 }

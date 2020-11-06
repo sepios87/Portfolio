@@ -17,7 +17,7 @@ export default function sliderPhoto(){
             <BackBubble	nbCercle={5}/>
             <Carousel>
                 {Array.from(map, ([key, value]) => (
-                    <Carousel.Item key={key} style={{maxHeight : "500px"}}>
+                    <Carousel.Item key={key.id} style={{maxHeight : "500px"}}>
                         <img  
                             style={{width : "100%"}}
                             src={value[0]}

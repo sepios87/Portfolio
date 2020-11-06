@@ -32,23 +32,12 @@
 
 .iconProfil{
   border-radius : 50%;
-  -webkit-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  -webkit-animation: pulseRed 1.5s infinite;
-          animation: pulseRed 1.5s infinite;
   position : relative;
   top : 220px;
-  background-color: "rgba(0, 0, 0, 0)";
   color : rgb(3, 219, 252);
-  padding: 5%;
-  -webkit-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-}
-
-.iconProfil:hover{
-  padding: 3%;
+  width: 35px !important;
+  height: 35px !important;
+  padding: 12%;
 }
 
 #profilLien{

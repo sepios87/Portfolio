@@ -29,6 +29,13 @@
   font-family: 'Source Code Pro', monospace;
 }
 
+#goTop{
+  z-index : 10;
+  position: fixed;
+  bottom : 30px;
+  right : 30px;
+}
+
 @media screen and (max-width: 992px) {
   .styles_typicalWrapper__1_Uvh, h1{
       font-size : 170% !important;
@@ -37,6 +44,10 @@
     #sousTitre{
       font-size : 100%;
     }
+
+  #goTop{
+    right : 18px;
+  }
 }
 
 @media screen and (max-width: 560px) {

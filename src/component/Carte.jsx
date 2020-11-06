@@ -1,5 +1,10 @@
 import React from 'react';
-import {Card,CardActionArea, CardContent, CardActions, CardMedia, Typography}  from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
 import Zoom from 'react-reveal/Zoom';
 import useSound from 'use-sound';
 

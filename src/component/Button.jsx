@@ -7,7 +7,7 @@ export default function Button(props){
 
     const [play] = useSound(
         './musique/buttonHover.mp3',
-        { volume: 0.55 }
+        { volume: 0.6 }
       );
 
     return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent,TimelineDot}  from '@material-ui/lab';
-import {Paper, Typography} from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 import SchoolIcon from '@material-ui/icons/School';
 import CodeIcon from '@material-ui/icons/Code';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';

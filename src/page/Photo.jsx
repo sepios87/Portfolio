@@ -7,7 +7,7 @@ import Header from '../component/Header'
 
 export default function Photo() { 
 
-    const job= "photographe"
+    const job= "Photographe"
 
     return (
         <div>
