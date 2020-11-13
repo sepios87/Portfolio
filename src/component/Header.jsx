@@ -14,12 +14,16 @@ export default function Header(props){
 
   const [play] = useSound(
     './musique/scroll.mp3',
-    { volume: 0.3 }
+    { volume: 0.4 }
   );
+
+  const TypingAnimation =  React.memo(()=>{
+    return <Typical steps={["profil", 3500, "projets" , 3500, "passionné", 3500]} loop={Infinity} wrapper="h1"/>
+  });
 
   let lien = props.lien !== undefined ? props.lien : "/";
 
-  const txt = 'C:\\Florian\\'+props.job+'>';
+  const txt = 'C:\\Florian\\'+props.job+'\\';
 
     return (
           <div>
@@ -27,9 +31,9 @@ export default function Header(props){
             <div id="blocTexte">
               <div style={{display : "flex"}}>
                 <h1 style={{marginTop : "2px"}}>{txt}</h1>
-                <Typical steps={["profil", 3000, "projets" , 3000]} loop={Infinity} wrapper="h1"/>
+                <TypingAnimation/>
               </div>
-              <h2 id="sousTitre">Vous entrez dans mon monde</h2>
+              {props.sousTitre}
             <Profil lien={lien} image={props.image} />
           </div>
           <IconButton onClick={() => {play();}} href="#bio" style={{display : "block", margin : "5% auto", width: "90px", height: "90px"}} variant="contained"><ExpandMoreIcon id="plus" style={{width: "70px", height: "70px"}}/></IconButton>

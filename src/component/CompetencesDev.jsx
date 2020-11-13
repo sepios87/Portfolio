@@ -29,7 +29,7 @@ const langage = [
 
   const framwork= [
     {source: "./svg/006-react.svg",
-    valeur: 40
+    valeur: 65
     },
     {source: "./svg/symfony.svg",
     valeur: 30

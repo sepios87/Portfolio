@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import CodeIcon from '@material-ui/icons/Code';
+import ComputerIcon from '@material-ui/icons/Computer';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import Tooltip from '@material-ui/core/Tooltip';
 import useSound from 'use-sound';
@@ -16,11 +16,15 @@ export default function Profil(props) {
     { volume: 0.4 }
   );
 
+  const [playTransform] = useSound (
+    '/musique/transform.mp3'
+  );
+
   return (
       <div id = "profilLien">
         <Link to='/dev' >
           <Tooltip title="Accéder au portfolio développeur" arrow>
-            <CodeIcon onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/photo") ? ({backgroundColor: "rgba(255, 108, 92, 0.2)", right : 130}) : ({backgroundColor: "white", right : 130, animation: "pulseRed 1.5s infinite"})} /> 
+            <ComputerIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/photo") ? ({backgroundColor: "rgba(255, 108, 92, 0.2)", right : 130}) : ({backgroundColor: "white", right : 130, animation: "pulseRed 1.5s infinite"})} /> 
           </Tooltip>
         </Link>
           <span id="profil" style={{position : "absolute", zIndex : 10, borderRadius : "50%", width : rayon, height : rayon, backgroundImage: "url("+props.image+")", backgroundSize: "cover"}}></span>
@@ -29,7 +33,7 @@ export default function Profil(props) {
           </video>
           <Link to='/photo' >
             <Tooltip title="Accéder au portfolio photographe" arrow>
-              <PhotoCameraIcon onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/dev") ? ({backgroundColor: "rgba(255, 108, 92, 0.2)", left : 130}) : ({backgroundColor: "white", left : 130, animation: "pulseRed 1.5s infinite"})}/>
+              <PhotoCameraIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/dev") ? ({backgroundColor: "rgba(255, 108, 92, 0.2)", left : 130}) : ({backgroundColor: "white", left : 130, animation: "pulseRed 1.5s infinite"})}/>
             </Tooltip>
         </Link>
       </div>

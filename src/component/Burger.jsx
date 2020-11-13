@@ -7,7 +7,7 @@ export default function Burger(){
 
     const [play] = useSound(
         './musique/scroll.mp3',
-        { volume: 0.3 }
+        { volume: 0.4 }
       );
 
     return (

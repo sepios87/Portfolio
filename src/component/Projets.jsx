@@ -43,7 +43,7 @@ export default function Projets(){
           <BackBubble	nbCercle={2}/>
       </Parallax>
       <Parallax y={matches ? [50, -70] : [0, -30]} x={matches ? [-10, -10] : [0, 0]}>
-          <Carte source="./images/portfolio.PNG" lien="#" nom="Portfolio" txt="Site web qui me représente développé entièrement en Réact JS."/>
+          <Carte source="./images/portfolio.PNG" lien="#" nom="Portfolio" txt="Site web qui me représente développé entièrement en React JS."/>
           <BackBubble	nbCercle={4}/>
       </Parallax>
         </div>

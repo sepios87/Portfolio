@@ -10,6 +10,8 @@ import useSound from 'use-sound';
 
 import Button from './Button'
 
+import './Carte.css'
+
 export default function Carte(props) {
 
   const [play] = useSound(
@@ -19,7 +21,7 @@ export default function Carte(props) {
 
   return (
     <Zoom>
-      <Card style={{maxWidth: "400px"}}>
+      <Card className="carte">
         <CardActionArea onClick={() => {play();}} >
           <CardMedia style={{height: "160px"}} image={props.source} title="projet"/>
           <CardContent>

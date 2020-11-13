@@ -12,9 +12,10 @@ export default function Dev() {
 
     return (
         <div>
-            <Header job={job} lien="/photo" image="./images/profilGlish.gif"/>
-            <Bio job={job} timeLine={<TimeLineDev/>} texte=" Etudiant en IUT Informatique, je suis aussi auto-entrepreneur 
-                                        en développement et photographie. 
+            <Header job={job} sousTitre={<h2 id="sousTitre">Vous entrez dans mon monde</h2>} lien="/photo" image="./images/profilGlish.gif"/>
+            <Bio job={job} timeLine={<TimeLineDev/>} lien="./images/profilBioDev.jpeg"
+            texte=" Etudiant en IUT Informatique, je suis aussi auto-entrepreneur 
+                                        en développement. 
                                         J'apprécie beaucoup le contact humain et aime aider les 
                                         gens à trouver des solutions adaptées à leurs besoins 
                                         grâce à l’informatique. Pour y parvenir, j’aime travailler 

@@ -22,7 +22,7 @@ export default function Bio(props){
       <BackBubble	nbCercle={4}/>
       <Rotate bottom left>
         <Card style={{display : "flex"}}>
-          <CardMedia id="imgBio" style={{width: "250px"}} image="./images/profilBio.jpeg"/>
+          <CardMedia id="imgBio" style={{width: "250px"}} image={props.lien}/>
             <CardContent id="bio">
               <div>
                 <Typography component="h5" variant="h5">Florian TORIBIO</Typography>
