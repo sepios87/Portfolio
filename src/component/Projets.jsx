@@ -32,7 +32,7 @@ export default function Projets(){
         <Parallax y={matches ? [0, -120] : [0, -10]} x={matches ? [-15, -15] : [0, 0]}>
           <Carte source="./images/SpaceInvader.PNG" lien="https://github.com/sepios87/spaceinvaders" nom="Space invader" txt="Projet scolaire réalisé en Java pour s'entrainer aux tests."/>
       </Parallax>
-      <Parallax y={matches ? [20, -60] : [0, -20]} x={matches ? [-50, -50] : [0, 0]}>
+      <Parallax y={matches ? [20, -60] : [0, -20]} x={matches ? [-40, -40] : [0, 0]}>
           <Carte source="./images/david.PNG" lien="https://sepios87.github.io/Site_DavidLemonade/" nom="David Lemonade" txt="Projet scolaire de site web one page réalisé à partir du charte graphique imposée."/>
           <BackBubble	nbCercle={4}/>
       </Parallax>

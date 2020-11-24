@@ -1,10 +1,16 @@
 import React, {useState} from 'react';
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useSound from 'use-sound';
 
 import './CarouselPopUp.css'
 
 export default function AutoRotatingCarouselModal (props) {
+
+    const [play] = useSound(
+      './musique/buttonHover.mp3',
+      { volume: 0.6 }
+    );
 
     const matches = useMediaQuery('(min-width:992px)');
 
@@ -35,7 +41,7 @@ export default function AutoRotatingCarouselModal (props) {
 
     return (
         <>
-          <button style={{backgroundColor : "rgba(0, 0, 0, 0)", border  :"none"}} onClick={() => setHandleOpen({ open: true })}><div className="boutton" style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>Voir</div></button>
+          <button onMouseEnter={() => {play();}} style={{backgroundColor : "rgba(0, 0, 0, 0)", border  :"none"}} onClick={() => setHandleOpen({ open: true })}><div className="boutton" style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>Voir</div></button>
           <AutoRotatingCarousel
             label="Fermer"
             mobile={!matches}

@@ -5,6 +5,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Footer from './component/Footer'
 import Burger from './component/Burger'
 import NavBar from './component/NavBar'
+import Musique from './component/Musique'
 import Dev from './page/Dev'
 import Photo from './page/Photo'
 
@@ -30,6 +31,8 @@ function App() {
 			<Route path='/' component={HeaderRedirection}/>
 
 			<Route path='/' component={() => matches ? <NavBar/> : <Burger/>}/>
+
+			<Route path='/' component={Musique}/>
 
 			<Route exact path='/dev' component={Dev}/>
 			<Route exact path='/photo' component={Photo}/>

@@ -48,7 +48,7 @@
       -ms-flex-pack : center; 
           justify-content : center; 
   height: 250px;
-  margin-top : 1%;
+  margin-top : 1em;
 }
 
 @-webkit-keyframes pulseRed {
