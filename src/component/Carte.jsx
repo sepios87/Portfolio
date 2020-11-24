@@ -30,7 +30,7 @@ export default function Carte(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <Button href={props.lien}>Découvrir</Button>
+        <Button href={props.lien}>Découvrir ce projet</Button>
         </CardActions>
       </Card>
     </Zoom>

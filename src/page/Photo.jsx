@@ -1,5 +1,6 @@
 import React from 'react';
 import Bio from '../component/Bio'
+import CompetencesPhoto from '../component/CompetencesPhoto';
 import SliderPhoto from '../component/SliderPhoto'
 import TimeLinePhoto from "../component/TimeLinePhoto"
 import BannerParallax from '../component/BannerParallax';
@@ -23,6 +24,7 @@ export default function Photo() {
                 <BannerParallax lien='./images/photo.jpg'/>
                 <SliderPhoto/>
                 <BannerParallax lien='./images/photo2.jpg'/>
+                <CompetencesPhoto/>
 			</div>
     );
 }

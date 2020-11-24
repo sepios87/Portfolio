@@ -28,7 +28,7 @@ function barreProgression(sourceImg, valeur, i){
   );
 }
 
-export default function Competences(props){
+export default function SkillDev(props){
 
   const [play] = useSound(
     './musique/click.mp3',

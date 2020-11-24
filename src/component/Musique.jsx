@@ -1,6 +1,6 @@
 import React from 'react'
-import VolumeUpIcon from '@material-ui/icons/VolumeUp';
-import VolumeOffIcon from '@material-ui/icons/VolumeOff';
+import VolumeOffOutlinedIcon from '@material-ui/icons/VolumeOffOutlined';
+import VolumeUpOutlinedIcon from '@material-ui/icons/VolumeUpOutlined';
 import useSound from 'use-sound';
 import IconButton from '@material-ui/core/IconButton';
 
@@ -14,6 +14,6 @@ export default function Musique(){
     );
 
     return (
-        <IconButton id="volume" onClick={() => {isPlaying ? stop() : play();}}>{isPlaying ? <VolumeUpIcon style={{color : "rgba(3, 219, 252, 0.8)"}}/> : <VolumeOffIcon style={{color : "rgba(255, 108, 92, 0.8)"}}/>}</IconButton>
+        <IconButton id="volume" onClick={() => {isPlaying ? stop() : play();}}>{isPlaying ? <VolumeUpOutlinedIcon style={{color : "rgba(3, 219, 252, 0.8)"}}/> : <VolumeOffOutlinedIcon style={{color : "rgba(255, 108, 92, 0.8)"}}/>}</IconButton>
     );
 }

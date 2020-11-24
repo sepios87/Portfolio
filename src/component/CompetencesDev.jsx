@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
-import Skill from './Skill'
+import Skill from './SkillDev'
 import ParallaxCache from './ParallaxCache';
 
 import './CompetencesDev.css'
@@ -56,11 +56,11 @@ export default function CompetencesDev(){
           <ParallaxProvider>
             <ParallaxCache/>
             <Parallax y={[0, -10]}>
-              <div id="competences">
-                <div className="compDiv">
+              <div id="competencesDev">
+                <div className="compDivDev">
                   <Skill tab={langage} nom="Langages"/>
                 </div>
-                <div className="compDiv">
+                <div className="compDivDev">
                   <Skill tab={logiciel} nom="Logiciels"/>
                   <Skill tab={framwork} nom="Frameworks"/>
                 </div>
