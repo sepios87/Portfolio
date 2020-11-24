@@ -11,8 +11,10 @@ export default function Button(props){
       );
 
     return (
-        <a onMouseEnter={() => {play();}} style={{display : "block", margin : "15px auto"}} className="myButton" rel="noopener noreferrer" target="_blank" href={props.href}>
+        <div class="divButton" style={{display : "block", margin : "0 auto"}}>
+            <a onMouseEnter={() => {play();}} className="myButton" rel="noopener noreferrer" target="_blank" href={props.href}>
             {props.children}
-        </a>
+            </a>
+        </div>
     );
 }

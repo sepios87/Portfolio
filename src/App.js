@@ -7,7 +7,6 @@ import Burger from './component/Burger'
 import NavBar from './component/NavBar'
 import Dev from './page/Dev'
 import Photo from './page/Photo'
-import Musique from './component/Musique'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -29,8 +28,6 @@ function App() {
       <BrowserRouter>
 
 			<Route path='/' component={HeaderRedirection}/>
-			
-			<Route path='/' component={Musique}/>
 
 			<Route path='/' component={() => matches ? <NavBar/> : <Burger/>}/>
 

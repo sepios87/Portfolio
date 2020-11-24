@@ -8,6 +8,8 @@ import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 
 export default function TimeLine() {
 
+  const lineStyle = {background : "rgba(185, 233, 204, 0.9)"}
+
   return (
     <Timeline align="alternate">
       <TimelineItem>
@@ -18,7 +20,7 @@ export default function TimeLine() {
           <TimelineDot style={{color : "rgba(255, 108, 92, 0.8)", backgroundColor: "white"}}>
             <SchoolIcon />
           </TimelineDot>
-          <TimelineConnector />
+          <TimelineConnector style={lineStyle} />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>
@@ -35,7 +37,7 @@ export default function TimeLine() {
           <TimelineDot style={{color : "rgba(3, 219, 252, 0.7)", backgroundColor: "white"}}>
             <CodeIcon/>
           </TimelineDot>
-          <TimelineConnector />
+          <TimelineConnector style={lineStyle} />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>

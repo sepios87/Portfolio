@@ -34,9 +34,9 @@
   border-radius : 50%;
   position : relative;
   top : 220px;
-  color : rgb(3, 219, 252);
-  width: 38px !important;
-  height: 38px !important;
+  color :rgba(3, 219, 252, 0.8);
+  width: 45px !important;
+  height: 45px !important;
   padding: 12%;
 }
 

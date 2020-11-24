@@ -2,7 +2,7 @@
     display : none;
 }
 
-.MuiButton-contained{
+.MuiButton-contained, .boutton{
         width: 180px !important;
         padding : 12px 6px !important;
         font-family: 'Roboto', sans-serif !important;
@@ -11,7 +11,7 @@
         letter-spacing: 2.5px !important;
         font-weight: 500 !important;
         color: #000 !important;
-        background-color: #fff !important;
+        background: linear-gradient(90deg, rgba(64,64,64,0.9) 20%, rgba(255, 255, 255, 0.9) 20%) !important;
         border: none !important;
         border-radius: 45px !important;
         -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
@@ -26,8 +26,8 @@
         text-decoration: none !important;
 }
 
-.MuiButton-contained:hover {
-    background-color: rgb(255, 108, 92) !important;
+.MuiButton-contained:hover , .boutton:hover{
+    background: linear-gradient(90deg, rgba(64,64,64,0.9) 20%, rgb(255, 108, 92) 20%) !important;
     -webkit-box-shadow: 0px 15px 20px rgba(255, 108, 92, 0.75) !important;
             box-shadow: 0px 15px 20px rgba(255, 108, 92, 0.75) !important;
     color: #fff !important;

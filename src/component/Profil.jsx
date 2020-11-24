@@ -24,7 +24,7 @@ export default function Profil(props) {
       <div id = "profilLien">
         <Link to='/dev' >
           <Tooltip title="Accéder au portfolio développeur" arrow>
-            <ComputerIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/photo") ? ({backgroundColor: "rgba(255, 108, 92, 0.2)", right : 130}) : ({backgroundColor: "white", right : 130, animation: "pulseRed 1.5s infinite"})} /> 
+            <ComputerIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/photo") ? ({backgroundColor: "rgba(3, 219, 252, 0.15)", right : 130}) : ({backgroundColor: "rgba(0, 0, 0, 0)", right : 130, animation: "pulseRed 1.5s infinite"})} /> 
           </Tooltip>
         </Link>
           <span id="profil" style={{position : "absolute", zIndex : 10, borderRadius : "50%", width : rayon, height : rayon, backgroundImage: "url("+props.image+")", backgroundSize: "cover"}}></span>
@@ -33,7 +33,7 @@ export default function Profil(props) {
           </video>
           <Link to='/photo' >
             <Tooltip title="Accéder au portfolio photographe" arrow>
-              <PhotoCameraIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/dev") ? ({backgroundColor: "rgba(255, 108, 92, 0.2)", left : 130}) : ({backgroundColor: "white", left : 130, animation: "pulseRed 1.5s infinite"})}/>
+              <PhotoCameraIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/dev") ? ({backgroundColor: "rgba(3, 219, 252, 0.15)", left : 130}) : ({backgroundColor: "rgba(0, 0, 0, 0)", left : 130, animation: "pulseRed 1.5s infinite"})}/>
             </Tooltip>
         </Link>
       </div>

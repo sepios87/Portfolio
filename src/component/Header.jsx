@@ -4,6 +4,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Typical from 'react-typical';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import useSound from 'use-sound';
+import VolumeUpIcon from '@material-ui/icons/VolumeUp';
+import VolumeOffIcon from '@material-ui/icons/VolumeOff';
 
 import BackgroundCircle from './BackgroundCircle'
 import Profil from './Profil'
@@ -17,6 +19,12 @@ export default function Header(props){
     { volume: 0.4 }
   );
 
+  const [playFond, { stop, isPlaying }] = useSound(
+    './musique/fond.mp3',
+    { volume: 0.4 }
+  );
+
+
   const TypingAnimation =  React.memo(()=>{
     return <Typical steps={["profil", 3500, "projets" , 3500, "passionné", 3500]} loop={Infinity} wrapper="h1"/>
   });
@@ -28,6 +36,7 @@ export default function Header(props){
     return (
           <div>
           <BackgroundCircle nbCercle={12} />
+          <IconButton id="volume" onClick={() => {isPlaying ? stop() : playFond();}}>{isPlaying ? <VolumeUpIcon style={{color : "rgba(3, 219, 252, 0.8)"}}/> : <VolumeOffIcon style={{color : "rgba(255, 108, 92, 0.8)"}}/>}</IconButton>
             <div id="blocTexte">
               <div style={{display : "flex"}}>
                 <h1 style={{marginTop : "2px"}}>{txt}</h1>
@@ -36,7 +45,7 @@ export default function Header(props){
               {props.sousTitre}
             <Profil lien={lien} image={props.image} />
           </div>
-          <IconButton onClick={() => {play();}} href="#bio" style={{display : "block", margin : "5% auto", width: "90px", height: "90px"}} variant="contained"><ExpandMoreIcon id="plus" style={{width: "70px", height: "70px"}}/></IconButton>
+          <IconButton onClick={() => {play();}} href="#bio" style={{display : "block", margin : "5em  auto 10em auto", width: "90px", height: "90px"}} variant="contained"><ExpandMoreIcon id="plus" style={{width: "70px", height: "70px"}}/></IconButton>
           <IconButton onClick={() => {play();}} href="#home" id="goTop" variant="contained"><ExpandLessIcon style={{backgroundColor : "rgba(3, 219, 252, 0.1)", borderRadius :"10px", width: "35px", height: "35px"}}/></IconButton>
         </div>
     );
