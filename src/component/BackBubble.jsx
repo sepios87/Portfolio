@@ -8,11 +8,7 @@ function BackBubble(props) {
   
     for (let i=0; i<props.nbCercle; i++) {
   
-      if (i%2 === 0) {
-        couleur = "rgba(3, 219, 252,"+Math.round(Math.random()+0.1 * 100) / 100+")"
-      } else {
-        couleur = "rgba(255, 108, 92,"+Math.round(Math.random()+0.1 * 100) / 100+")"
-      }
+      couleur = i%2 === 0 ? "rgba(3, 219, 252,"+Math.round(Math.random()+0.1 * 100) / 100+")" : "rgba(255, 108, 92,"+Math.round(Math.random()+0.1 * 100) / 100+")";
 
       const randx = Math.random()*100;
       const randy = Math.random()*100;

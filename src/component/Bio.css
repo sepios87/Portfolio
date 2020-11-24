@@ -23,6 +23,13 @@
   width : 600px;
 }
 
+#carteBio{
+  display : flex;
+  margin : auto;
+  width : 75%;
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 1450px) {
   #imgBio{
     display : none;

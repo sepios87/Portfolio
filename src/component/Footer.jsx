@@ -26,31 +26,33 @@ export default function Footer (){
         { volume: 0.4 }
       );
 
+    const animation = {y : [0, -10, 0]}
+
     return(
             <div id="contact">
                 <div className="iconDiv">
-                    <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{type: "spring", duration : 1.8, loop: Infinity}}>
+                    <Frame background="none" size="36px" animate={animation} transition={{type: "spring", duration : 1.8, loop: Infinity}}>
                     <Tooltip title="+33 6 83 49 80 56" arrow>
                         <a onMouseEnter={() => {play();}} className="iconLien" href="tel:+33683498056"><PhoneIcon style={styleIcon}/></a>
                     </Tooltip>
                     </Frame> 
                 </div>
                 <div className="iconDiv">
-                    <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{delay : 0.25, type: "spring", duration : 1.8, loop: Infinity}}>
+                    <Frame background="none" size="36px" animate={animation} transition={{delay : 0.25, type: "spring", duration : 1.8, loop: Infinity}}>
                         <Tooltip title="sepios.corp@gmail.com" arrow>
                             <a onMouseEnter={() => {play();}} className="iconLien" href="mailto:sepios.corp@gmail.com"><MailIcon style={styleIcon}/></a>   
                         </Tooltip>
                     </Frame>
                 </div>
                <div className="iconDiv">
-                    <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{delay : 0.50, type: "spring", duration : 1.8, loop: Infinity}}>
+                    <Frame background="none" size="36px" animate={animation} transition={{delay : 0.50, type: "spring", duration : 1.8, loop: Infinity}}>
                         <Tooltip title="florian toribio" arrow>
                             <a onMouseEnter={() => {play();}} rel="noopener noreferrer" className="iconLien" target="_blank" href="https://www.linkedin.com/in/florian-toribio/"><LinkedInIcon style={styleIcon}/></a>
                         </Tooltip> 
                     </Frame>
                </div>
                <div className="iconDiv">
-                    <Frame background="none" size="36px" animate={{y : [0, -10, 0]}} transition={{delay : 0.75, type: "spring", duration : 1.8, loop: Infinity}}>
+                    <Frame background="none" size="36px" animate={animation} transition={{delay : 0.75, type: "spring", duration : 1.8, loop: Infinity}}>
                         <Tooltip title="sepios87" arrow>
                             <a onMouseEnter={() => {play();}} rel="noopener noreferrer" className="iconLien" href="https://github.com/sepios87" target="_blank"><GitHubIcon style={styleIcon}/></a>   
                         </Tooltip>

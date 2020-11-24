@@ -56,6 +56,7 @@ export default function CompetencesDev(){
           <ParallaxProvider>
             <ParallaxCache/>
             <Parallax y={[0, -10]}>
+              <span id="competences"></span>
               <div id="competencesDev">
                 <div className="compDivDev">
                   <Skill tab={langage} nom="Langages"/>

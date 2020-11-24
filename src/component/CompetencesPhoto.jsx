@@ -23,7 +23,8 @@ export default function CompetencesPhoto(){
     return (
           <ParallaxProvider>
             <ParallaxCache/>
-            <Parallax y={[0, -30]}>
+            <Parallax y={[0, -20]}>
+            <span id="competences"></span>
               <div id="competencesPhoto">
                   <Skill tab={photo}/>
               </div>

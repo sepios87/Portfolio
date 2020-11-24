@@ -1,16 +1,16 @@
 @font-face{
   font-family: "Roboto";
-  src: url('./Roboto-Regular.ttf');
+  src: url('./polices/Roboto-Regular.ttf');
 }
 
 @font-face{
   font-family: "RobotoMedium";
-  src: url('./Roboto-Medium.ttf');
+  src: url('./polices/Roboto-Medium.ttf');
 }
 
 @font-face{
   font-family: "'Source Code Pro'";
-  src: url('./SourceCodePro-Regular.ttf');
+  src: url('./polices/SourceCodePro-Regular.ttf');
 }
 
 html{

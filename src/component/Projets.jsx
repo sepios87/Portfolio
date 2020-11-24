@@ -33,7 +33,7 @@ export default function Projets(){
           <Carte source="./images/SpaceInvader.PNG" lien="https://github.com/sepios87/spaceinvaders" nom="Space invader" txt="Projet scolaire réalisé en Java pour s'entrainer aux tests. Il reprend le principe du
           jeu Space Invaders : un jeu rétro avec des extratérestres !"/>
       </Parallax>
-      <Parallax y={matches ? [20, -60] : [0, -20]} x={matches ? [-40, -40] : [0, 0]}>
+      <Parallax y={matches ? [20, -60] : [0, -20]} x={matches ? [-30, -30] : [0, 0]}>
           <Carte source="./images/david.PNG" lien="https://sepios87.github.io/Site_DavidLemonade/" nom="David Lemonade" txt="Projet scolaire de site web one page réalisé à partir du charte graphique imposée.
           Cette one-page devait être le site vitrine de l'association Cambava, un producteur de limonade. Nous l'avons réalisé en groupe de 3 sur une durée d'un mois."/>
           <BackBubble	nbCercle={4}/>

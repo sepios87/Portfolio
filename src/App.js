@@ -18,11 +18,7 @@ function App() {
 
 	const HeaderRedirection = () => {
 		const location = useLocation();
-		if (location.pathname === "/"){
-			return <Redirect to="/dev"/>;
-		} else {
-			return <></>
-		}
+		return location.pathname === "/" ? <Redirect to="/dev"/> : <></>;
 	  }
 
     return (

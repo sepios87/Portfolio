@@ -14,14 +14,13 @@ import './Bio.css'
 
 export default function Bio(props){
 
-  return (
-    <div style={{display : "block", margin : "auto", width : "75%", marginBottom: "50px"}}>
+  return ( 
     <ParallaxProvider>
       <ParallaxCache/>
       <Parallax y={[10, -20]}>
       <BackBubble	nbCercle={4}/>
       <Rotate bottom left>
-        <Card style={{display : "flex"}}>
+        <Card id="carteBio">
           <CardMedia id="imgBio" style={{width: "250px"}} image={props.lien}/>
             <CardContent id="bio">
               <div>
@@ -40,6 +39,5 @@ export default function Bio(props){
         </Rotate>
       </Parallax>
     </ParallaxProvider>
-    </div>
   );
 }
