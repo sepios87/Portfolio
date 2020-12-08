@@ -1,6 +1,6 @@
 .styles_typicalWrapper__1_Uvh, h1{
   font-weight: 400;
-  font-size : 300% !important;
+  font-size : 3em !important;
 }
 
 #sousTitre{
@@ -36,8 +36,11 @@
 }
 
 @media screen and (max-width: 992px) {
+  #blocTexte{
+    margin-top : 2em;
+  }
   .styles_typicalWrapper__1_Uvh, h1{
-      font-size : 170% !important;
+      font-size : 1.6em !important;
     }
   
     #sousTitre{
@@ -52,6 +55,12 @@
 
 @media screen and (max-width: 560px) {
   .styles_typicalWrapper__1_Uvh, h1{
-    font-size : 130% !important;
+    font-size : 1.2em !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .styles_typicalWrapper__1_Uvh, h1{
+    font-size : 1em !important;
   }
 }

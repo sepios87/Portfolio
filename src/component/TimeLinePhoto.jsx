@@ -25,7 +25,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>
             <h5>Décourverte de la photographie</h5>
-            <p>A travers la nature, les fleurs et les paysages la photo commence à me passionner</p>
+            <p>A travers la nature, les fleurs et les paysages, la photo commence à me passionner</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -42,7 +42,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>
             <h5>Premier concours photo remporté !</h5>
-            <p>Primé à l'asma et par la même occasion je me lance dans la photographie de portraits</p>
+            <p>Primé à l'ASMA et par la même occasion, je me lance dans la photographie de portraits</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -54,7 +54,7 @@ export default function TimeLine() {
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} style={{padding: '4%'}}>
-            <h5>Attention souriez !</h5>
+            <h5>Attention, souriez !</h5>
             <p>Vous allez bientôt avoir de belles photos de vous</p>
           </Paper>
         </TimelineContent>

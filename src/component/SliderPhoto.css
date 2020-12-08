@@ -1,0 +1,11 @@
+.titreSlide{
+    margin-bottom : 20%;
+    font-size : 3.6em;
+}
+
+@media screen and (max-width: 992px) {
+    .titreSlide{
+        margin-bottom : 30%;
+        font-size : 2.5em;
+    }
+}

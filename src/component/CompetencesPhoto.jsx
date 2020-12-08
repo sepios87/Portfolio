@@ -7,13 +7,13 @@ import ParallaxCache from './ParallaxCache';
 import './CompetencesPhoto.css'
 
 const photo = [
-    {nom: "Portrait",
+    {nom: "Portraits",
     valeur: 90}, 
     {nom: "Nature",
     valeur: 90}, 
-    {nom: "Evenementiel",
+    {nom: "Evénementiel",
     valeur: 80}, 
-    {nom: "Paysage",
+    {nom: "Paysages",
     valeur: 75}
   ];
 

@@ -14,12 +14,12 @@ export default function Photo() {
         <div>
             <Header job={job} sousTitre={<h2 id="sousTitre">Vous entrez dans mon <b>autre</b> monde</h2>}  lien="/dev" image="./images/profil.jpg"/>
             <Bio timeLine={<TimeLinePhoto/>} job={job} lien="./images/profilBioPhoto.jpg"
-            texte=" La photo est devenue une passion dévorante pour moi depuis 
+            texte=" La photo est devenue une passion importante pour moi depuis 
                                 le collège et c'est ce qui m'a mené à devenir auto-entrepreneur en photgraphie.
                                 Des fleurs en passant par le payage pour finir par les portraits, j'ai touché 
                                 à tout ! Le fait de prendre les gens en photo pour ensuite voir leur sourire quand 
-                                ils ont la photo entre les mains me fait adorer ce métier. Que ce soit pour des photos 
-                                de mariages, pour des baptêmes, des photos instagram je serais ravi de vous faire 
+                                ils ont leur portrait entre les mains me fait adorer ce métier. Que ce soit pour des 
+                                mariages, pour des baptêmes, ou des photos instagram, je serais ravi de vous faire 
                                 sourire vous aussi !"/>
                 <BannerParallax lien='./images/photo.jpg'/>
                 <SliderPhoto/>

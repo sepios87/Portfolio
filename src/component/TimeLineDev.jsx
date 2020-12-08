@@ -25,7 +25,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>
             <h5>Lycée Turgot</h5>
-            <p>Bac Scientifique Mention Bien.</p>
+            <p>Bac Scientifique Mention Bien</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -42,7 +42,7 @@ export default function TimeLine() {
         <TimelineContent>
           <Paper elevation={3} style={{padding: '3%'}}>
             <h5>IUT Informatique du Limousin</h5>
-            <p>Coder, c'est cool; développer, c'est mieux !</p>
+            <p>Coder, c'est cool.<br/>Développer, c'est mieux !</p>
           </Paper>
         </TimelineContent>
       </TimelineItem>
