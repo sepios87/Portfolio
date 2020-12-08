@@ -22,7 +22,7 @@ const BorderLinearProgress = withStyles({
 function barreProgression(sourceImg, valeur, i){
   return (
     <div style={{display: "flex", padding : "2%"}} key={i} >
-      <img src={sourceImg} alt="Logo" style={{width : "45px"}} />
+      <img src={sourceImg} alt="Logo" style={{width : "45px", height:"45px"}} />
       <BorderLinearProgress style={{width : "80%", margin : "auto"}} variant="determinate" value={valeur}/>
     </div>
   );

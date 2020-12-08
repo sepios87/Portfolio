@@ -18,12 +18,12 @@ export default function Burger(){
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="#home"><li>Accueil</li></a>
-                    <a onClick={() => {play();}} href="#bio" ><li>Bio</li></a>
-                    <a onClick={() => {play();}} href="#mesProjets"><li>Projets</li></a>
-                    <a onClick={() => {play();}} href="#competences"><li>Compétences</li></a>
-                    <a href="CV_Florian_TORIBIO.pdf" target="_blank"><li>CV</li></a>
-                    <a onClick={() => {play();}} href="#contact"><li>Contact</li></a>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a onClick={() => {play();}} href="#bio" >Bio</a></li>
+                    <li><a onClick={() => {play();}} href="#mesProjets">Projets</a></li>
+                    <li><a onClick={() => {play();}} href="#competences">Compétences</a></li>
+                    <li><a href="CV_Florian_TORIBIO.pdf" target="_blank">CV</a></li>
+                    <li><a onClick={() => {play();}} href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
