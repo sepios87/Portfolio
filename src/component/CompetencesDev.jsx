@@ -4,7 +4,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Skill from './SkillDev'
 import ParallaxCache from './ParallaxCache';
 
-import './CompetencesDev.css'
+import '../css/CompetencesDev.css'
 
 const langage = [
     {source: "./svg/030-html-5.svg",

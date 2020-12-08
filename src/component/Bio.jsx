@@ -10,7 +10,7 @@ import Rotate from 'react-reveal/Rotate';
 import BackBubble from './BackBubble'
 import Button from './Button'
 
-import './Bio.css'
+import '../css/Bio.css'
 
 export default function Bio(props){
 

@@ -3,7 +3,7 @@ import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useSound from 'use-sound';
 
-import './CarouselPopUp.css'
+import '../css/CarouselPopUp.css'
 
 export default function AutoRotatingCarouselModal (props) {
 

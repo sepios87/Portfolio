@@ -1,7 +1,7 @@
 import React from 'react'
 import useSound from 'use-sound';
 
-import './Burger.css'
+import '../css/Burger.css'
 
 export default function Burger(){
 

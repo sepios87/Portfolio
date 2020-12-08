@@ -5,7 +5,7 @@ import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import Tooltip from '@material-ui/core/Tooltip';
 import useSound from 'use-sound';
 
-import './Profil.css'
+import '../css/Profil.css'
 
 export default function Profil(props) {
 

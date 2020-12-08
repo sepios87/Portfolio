@@ -7,7 +7,7 @@ import { Frame } from "framer"
 import Tooltip from '@material-ui/core/Tooltip';
 import useSound from 'use-sound';
 
-import './Footer.css'
+import '../css/Footer.css'
 
 export default function Footer (){
 

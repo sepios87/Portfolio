@@ -10,7 +10,7 @@ import useSound from 'use-sound';
 
 import Button from './Button'
 
-import './Carte.css'
+import '../css/Carte.css'
 
 export default function Carte(props) {
 

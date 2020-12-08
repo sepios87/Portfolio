@@ -4,7 +4,7 @@ import Fab from '@material-ui/core/Fab';
 import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined';
 import MusicOffOutlinedIcon from '@material-ui/icons/MusicOffOutlined';
 
-import './Musique.css'
+import '../css/Musique.css'
 
 export default function Musique(){
 

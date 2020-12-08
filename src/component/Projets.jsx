@@ -6,7 +6,7 @@ import Carte from './Carte'
 import ParallaxCache from './ParallaxCache'
 import BackBubble from './BackBubble'
 
-import './Projets.css'
+import '../css/Projets.css'
 
 export default function Projets(){
 

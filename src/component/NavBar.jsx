@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import useSound from 'use-sound';
 
-import './NavBar.css'
+import '../css/NavBar.css'
  
 export default function NavBar(){
   

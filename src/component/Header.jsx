@@ -8,7 +8,7 @@ import useSound from 'use-sound';
 import BackgroundCircle from './BackgroundCircle'
 import Profil from './Profil'
 
-import './Header.css'
+import '../css/Header.css'
 
 export default function Header(props){
 

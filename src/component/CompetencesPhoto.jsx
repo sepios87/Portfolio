@@ -4,7 +4,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Skill from './SkillPhoto'
 import ParallaxCache from './ParallaxCache';
 
-import './CompetencesPhoto.css'
+import '../css/CompetencesPhoto.css'
 
 const photo = [
     {nom: "Portraits",

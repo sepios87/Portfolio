@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import CarouselPopUp from './CarouselPopUp'
 import BackBubble from './BackBubble'
 
-import './SliderPhoto.css'
+import '../css/SliderPhoto.css'
  
 export default function sliderPhoto(){
     
