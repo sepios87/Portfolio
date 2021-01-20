@@ -38,6 +38,11 @@
   width: 45px !important;
   height: 45px !important;
   padding: 12%;
+  transition: all 1s;
+}
+
+.iconProfil:hover{
+  transform: scale(1.2);
 }
 
 #profilLien{

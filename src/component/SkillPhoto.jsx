@@ -40,6 +40,7 @@ export default function SkillPhoto(props){
       <Card style={{width : "100%", marginBottom: "50px"}}>
         <CardActionArea onClick={() => {play();}}>
           <CardContent style={{width : "100%"}}>
+          <Typography style={{textAlign : "center", marginBottom : 40}} gutterBottom variant="h5" component="h2">Mes compétences</Typography>
               <div>
               {props.tab.map((elem, i) => (
                     barreProgression(elem.nom, elem.valeur, i)
