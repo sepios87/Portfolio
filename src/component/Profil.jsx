@@ -27,7 +27,7 @@ export default function Profil(props) {
             <ComputerIcon onClick={() => {playTransform();}} onMouseEnter={() => {play();}} className="iconProfil" style={(props.lien === "/photo") ? ({backgroundColor: "rgba(3, 219, 252, 0.15)", right : "4.8em"}) : ({backgroundColor: "rgba(0, 0, 0, 0)", right : "4.8em", animation: "pulseRed 1.5s infinite"})} /> 
           </Tooltip>
         </Link>
-          <span id="profil" style={{position : "absolute", zIndex : 10, borderRadius : "50%", width : rayon, height : rayon, backgroundImage: "url("+props.image+")", backgroundSize: "cover"}}></span>
+          {/* <span id="profil" style={{position : "absolute", zIndex : 10, borderRadius : "50%", width : rayon, height : rayon, backgroundImage: "url("+props.image+")", backgroundSize: "cover"}}></span> */}
           <video loop autoPlay muted style={{position : "absolute", zIndex : 9, borderRadius : "50%", width : rayon, height : rayon}}>
             <source src="./images/profilDeux.mp4" type='video/mp4' />
           </video>

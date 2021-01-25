@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Bounce from 'react-reveal/Bounce';
 import useSound from 'use-sound';
+import BackBubble from './BackBubble'
 
 const BorderLinearProgress = withStyles({
   root: {
@@ -38,6 +39,7 @@ export default function SkillDev(props){
     return (
       <Bounce>
       <Card style={{width : "100%", marginBottom: "50px"}}>
+      <BackBubble	nbCercle={3}/>
         <CardActionArea onClick={() => {play();}}>
           <CardContent style={{width : "100%"}}>
             <Typography style={{textAlign : "center"}} gutterBottom variant="h5" component="h2">{props.nom}</Typography>

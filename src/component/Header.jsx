@@ -27,7 +27,7 @@ export default function Header(props){
 
     return (
           <div>
-          <BackgroundCircle nbCercle={12} />
+          <BackgroundCircle nbCercle={10} />
            <div id="blocTexte">
               <div style={{display : "flex"}}>
                 <h1 style={{marginTop : "2px"}}>{txt}</h1>

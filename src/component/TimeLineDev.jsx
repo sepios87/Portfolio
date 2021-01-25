@@ -6,6 +6,8 @@ import SchoolIcon from '@material-ui/icons/School';
 import CodeIcon from '@material-ui/icons/Code';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 
+import '../css/TimeLine.css';
+
 export default function TimeLine() {
 
   const lineStyle = {background : "rgba(185, 233, 204, 0.9)"}
@@ -23,7 +25,7 @@ export default function TimeLine() {
           <TimelineConnector style={lineStyle} />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{padding: '3%'}}>
+          <Paper className="timeLineElement" elevation={3} style={{padding: '3%'}}>
             <h5>Lycée Turgot</h5>
             <p>Bac Scientifique Mention Bien</p>
           </Paper>
@@ -40,7 +42,7 @@ export default function TimeLine() {
           <TimelineConnector style={lineStyle} />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{padding: '3%'}}>
+          <Paper className="timeLineElement" elevation={3} style={{padding: '3%'}}>
             <h5>IUT Informatique du Limousin</h5>
             <p>Coder, c'est cool.<br/>Développer, c'est mieux !</p>
           </Paper>
@@ -53,7 +55,7 @@ export default function TimeLine() {
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent>
-          <Paper elevation={3} style={{padding: '4%'}}>
+          <Paper className="timeLineElement" elevation={3} style={{padding: '4%'}}>
             <h5>Bientôt en collaboration avec vous !</h5>
             <p>Réalisons vos projets ensemble</p>
           </Paper>
