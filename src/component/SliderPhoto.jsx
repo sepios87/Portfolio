@@ -20,9 +20,9 @@ export default function sliderPhoto(){
             <BackBubble	nbCercle={5}/>
             <Carousel autoPlay={false}>
             {Array.from(map, ([key, value]) => (
-                <div key={key} style={{height : 400}}>
-                    <img  style={{width : "100%", height : 400, objectFit : "cover"}} src={value[0]} alt = {value[0]}/>
-                    <div style={{position : "absolute", display : "block", height : 0, top: "5%", left : "43.8%", color : "white"}}>
+                <div class="imageSlide" key={key} style={{height : 400}}>
+                    <img src={value[0]} alt = {value[0]}/>
+                    <div>
                         <h3 style={{position : "relative", marginBottom: 180, textAlign: "center"}}className="titreSlide" >{key}</h3>
                         <CarouselPopUp photo={value} />
                     </div>

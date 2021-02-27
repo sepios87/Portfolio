@@ -3,6 +3,20 @@
     font-size : 3.6em;
 }
 
+.imageSlide img{
+    width : 100%;
+    height : 400px;
+    object-fit : cover;
+}
+
+.imageSlide div{
+    position : absolute;
+    display : block;
+    top: 5%;
+    width: 100%;
+    color : white;
+}
+
 @media screen and (max-width: 992px) {
     .titreSlide{
         margin-bottom : 30%;

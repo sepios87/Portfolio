@@ -11,8 +11,8 @@ import '../css/Footer.css'
 const Footer = () => {
 
     const styleIcon={
-        width : "32px",
-        height : "32px",
+        width : "25px",
+        height : "25px",
         background: "linear-gradient(119deg, rgba(255,108,92,0.9) 4%, rgba(255,108,92,1) 65%)",
         padding : "7px",
         borderRadius : '50%',
@@ -32,21 +32,21 @@ const Footer = () => {
                     </motion.div> 
                 </div>
                 <div className="iconDiv">
-                    <motion.div background="none" size="36px" animate={animation} transition={{delay : 0.25, type: "spring", duration : 1.8, repeat: Infinity}}>
+                    <motion.div background="none" size="36px" animate={animation} transition={{delay : 0.4, type: "spring", duration : 1.8, repeat: Infinity}}>
                         <Tooltip title="sepios.corp@gmail.com" arrow>
                             <a className="iconLien" href="mailto:sepios.corp@gmail.com"><MailIcon style={styleIcon}/></a>   
                         </Tooltip>
                     </motion.div>
                 </div>
                <div className="iconDiv">
-                    <motion.div background="none" size="36px" animate={animation} transition={{delay : 0.50, type: "spring", duration : 1.8, repeat: Infinity}}>
+                    <motion.div background="none" size="36px" animate={animation} transition={{delay : 0.8, type: "spring", duration : 1.8, repeat: Infinity}}>
                         <Tooltip title="florian toribio" arrow>
                             <a rel="noopener noreferrer" className="iconLien" target="_blank" href="https://www.linkedin.com/in/florian-toribio/"><LinkedInIcon style={styleIcon}/></a>
                         </Tooltip> 
                     </motion.div>
                </div>
                <div className="iconDiv">
-                    <motion.div background="none" size="36px" animate={animation} transition={{delay : 0.75, type: "spring", duration : 1.8, repeat: Infinity}}>
+                    <motion.div background="none" size="36px" animate={animation} transition={{delay : 1.2, type: "spring", duration : 1.8, repeat: Infinity}}>
                         <Tooltip title="sepios87" arrow>
                             <a rel="noopener noreferrer" className="iconLien" href="https://github.com/sepios87" target="_blank"><GitHubIcon style={styleIcon}/></a>   
                         </Tooltip>

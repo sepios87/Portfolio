@@ -43,7 +43,7 @@ export default function AutoRotatingCarouselModal (props) {
         <>
           <button 
             onMouseEnter={() => {play();}} 
-            style={{backgroundColor : "rgba(0, 0, 0, 0)", border  :"none"}} 
+            style={{backgroundColor : "rgba(0, 0, 0, 0)", border  :"none", margin : 'auto', display : 'block'}} 
             onClick={() => setHandleOpen({ open: true })}>
                 <div className="boutton" 
                 style={{zIndex : "20", display : "block", margin : "0 auto", position : "relative", bottom : "6%"}}>
