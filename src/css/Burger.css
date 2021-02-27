@@ -131,13 +131,12 @@ nav{
 #menu
 {
   position: absolute;
-  width: calc(100% + 25px);
-  margin: -100px 0 0 -50px;
-  padding: 50px;
+  width: 100%;
+  margin: -100px 0 0 -65px;
   padding-top: 125px;
+  padding-bottom: 20px;
   background: rgba(221,221,221, 0.9);
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0% 0%;
       -ms-transform-origin: 0% 0%;
           transform-origin: 0% 0%;

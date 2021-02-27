@@ -19,21 +19,21 @@ const BorderLinearProgress = withStyles({
   },
 })(LinearProgress);
 
-function barreProgression(nom, valeur, i){
-  return (
-    <div style={{display: "flex", flexDirection : "column", padding : "2%"}} key={i} >
-      <Typography style={{textAlign : "center"}} gutterBottom variant="h6" component="h3">{nom}</Typography>
-      <BorderLinearProgress style={{width : "70%", margin : "0 auto 15px"}} variant="determinate" value={valeur}/>
-    </div>
-  );
-}
-
 export default function SkillPhoto(props){
 
   const [play] = useSound(
     './musique/click.mp3',
     { volume: 0.55 }
   );
+
+  const barreProgression = (nom, valeur, i) => {
+    return (
+      <div style={{display: "flex", flexDirection : "column", padding : "2%"}} key={i} >
+        <Typography style={{textAlign : "center"}} gutterBottom variant="h6" component="h3">{nom}</Typography>
+        <BorderLinearProgress style={{width : "70%", margin : "0 auto 15px"}} variant="determinate" value={valeur}/>
+      </div>
+    );
+  }
   
     return (
       <Bounce>

@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Bounce from 'react-reveal/Bounce';
 import useSound from 'use-sound';
 import BackBubble from './BackBubble'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const BorderLinearProgress = withStyles({
   root: {
@@ -20,21 +21,23 @@ const BorderLinearProgress = withStyles({
   },
 })(LinearProgress);
 
-function barreProgression(sourceImg, valeur, i){
-  return (
-    <div style={{display: "flex", padding : "2%"}} key={i} >
-      <img src={sourceImg} alt="Logo" style={{width : "45px", height:"45px"}} />
-      <BorderLinearProgress style={{width : "80%", margin : "auto"}} variant="determinate" value={valeur}/>
-    </div>
-  );
-}
-
 export default function SkillDev(props){
 
   const [play] = useSound(
     './musique/click.mp3',
     { volume: 0.55 }
   );
+
+  const matches = useMediaQuery('(min-width:992px)');
+
+  const barreProgression = (sourceImg, valeur, i) => {
+    return (
+      <div style={{display: "flex", padding : "2%"}} key={i} >
+        <img src={sourceImg} alt="Logo" style={{width : "45px", height:"45px"}} />
+        <BorderLinearProgress style={{width : matches ? "80%" : "60%", margin : "auto"}} variant="determinate" value={valeur}/>
+      </div>
+    );
+  }
   
     return (
       <Bounce>
