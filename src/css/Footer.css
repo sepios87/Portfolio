@@ -3,18 +3,17 @@
   display : -webkit-box;
   display : -ms-flexbox;
   display : flex;
-  height : 40px;
   margin-top : 50px;
 
   -ms-flex-pack : distribute;
       justify-content : space-around;
-  width : 100%;
-  padding: 0 20%;
-}
+  width: 90%;
+  padding: 0 5%;
+    }
 
 .iconDiv{
   position: relative;
-  bottom: 14px;
+  bottom: 20px;
 }
 
 .iconLien{

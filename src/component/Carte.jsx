@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Zoom from 'react-reveal/Zoom';
 import useSound from 'use-sound';
 
+import BackBubble from './BackBubble'
 import Button from './Button'
 import Dialog from './DialogCarte';
 
@@ -25,6 +26,7 @@ export default function Carte(props) {
   return (
     <>
       <Zoom>
+        <BackBubble	nbCercle={2}/>
         <Card className="carte">
           <CardActionArea onClick={() => {
             play();
@@ -39,6 +41,7 @@ export default function Carte(props) {
           <Button onClick={() => setOpen(true)}>Découvrir ce projet</Button>
           </CardActions>
         </Card>
+        <BackBubble	nbCercle={2}/>
       </Zoom>
       <Dialog handleClose={() => setOpen(false)} open={open} title={props.nom} content={props.txt} lien={props.lien} image={props.source}/>
     </>

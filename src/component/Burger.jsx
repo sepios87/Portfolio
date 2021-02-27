@@ -18,7 +18,7 @@ export default function Burger(){
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
                     <li><a onClick={() => {play();}} href="#bio" >Bio</a></li>
                     <li><a onClick={() => {play();}} href="#mesProjets">Projets</a></li>
                     <li><a onClick={() => {play();}} href="#competences">Compétences</a></li>

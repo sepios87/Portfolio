@@ -18,26 +18,28 @@ export default function Header(props){
   );
 
   const TypingAnimation =  React.memo(()=>{
-    return <Typical steps={["profil", 3500, "projets" , 3500, "passionné", 3500]} loop={Infinity} wrapper="h1"/>
+    return <Typical steps={[`${props.job}\\profil`, 3500, `${props.job}\\projets` , 3500, `${props.job}\\passioné`, 3500]} loop={Infinity} wrapper="h1"/>
   });
 
   let lien = props.lien !== undefined ? props.lien : "/";
 
-  const txt = 'C:\\Florian\\'+props.job+'\\';
+  const txt = 'C:\\Florian\\';
 
     return (
-          <div>
+          <div id="accueil">
           <BackgroundCircle nbCercle={10} />
            <div id="blocTexte">
               <div style={{display : "flex"}}>
-                <h1 style={{marginTop : "2px"}}>{txt}</h1>
+                <h1>{txt}</h1>
                 <TypingAnimation/>
               </div>
               {props.sousTitre}
             <Profil lien={lien} image={props.image} />
           </div>
-          <IconButton onClick={() => {play();}} href="#bio" style={{display : "block", margin : "5em  auto 10em auto", width: "90px", height: "90px"}} variant="contained"><ExpandMoreIcon id="plus" style={{width: "70px", height: "70px"}}/></IconButton>
-          <IconButton onClick={() => {play();}} href="#home" id="goTop" variant="contained"><ExpandLessIcon style={{backgroundColor : "rgba(3, 219, 252, 0.1)", borderRadius :"10px", width: "35px", height: "35px"}}/></IconButton>
+          <div style={{ display : "block", margin : "5em  auto 10em auto", textAlign : "center"}}>
+          <IconButton onClick={() => {play();}} href="#bio" style={{zIndex : 2}} variant="contained"><ExpandMoreIcon id="plus" style={{width: "70px", height: "70px"}}/></IconButton>
+          </div>
+          <IconButton onClick={() => {play();}} href="#accueil" id="goTop" variant="contained"><ExpandLessIcon style={{backgroundColor : "rgba(3, 219, 252, 0.1)", borderRadius :"10px", width: "35px", height: "35px"}}/></IconButton>
         </div>
     );
 }

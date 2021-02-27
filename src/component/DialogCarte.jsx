@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 
+import BackBubble from './BackBubble'
 import '../css/Dialog.css';
 
 const DialogTitle = ((props) => {
@@ -30,6 +31,7 @@ export default function CustomizedDialogs({handleClose, open, title, content, li
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
         <DialogTitle className="dialogTitle" onClose={handleClose}>{title}</DialogTitle>
         <DialogContent className="dialogCarte">
+          <BackBubble	nbCercle={2}/>
           <Typography gutterBottom>{content}</Typography>
           <img style={{display : "block", margin : "25px auto"}} width="85%" src={image} alt="img dialogue"/>
         </DialogContent>

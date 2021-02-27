@@ -1,5 +1,6 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
+// import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-material-ui-carousel'
  
 import CarouselPopUp from './CarouselPopUp'
 import BackBubble from './BackBubble'
@@ -17,19 +18,16 @@ export default function sliderPhoto(){
     return (
         <div id="mesProjets" style={{zIndex : -1, width : "90%", margin : "auto"}}>
             <BackBubble	nbCercle={5}/>
-            <Carousel>
-                {Array.from(map, ([key, value]) => (
-                    <Carousel.Item key={key.id} style={{maxHeight : "500px"}}>
-                        <img  
-                            style={{width : "100%"}}
-                            src={value[0]}
-                            alt = {value[0]}/>
-                    <Carousel.Caption>
-                        <h3 className="titreSlide" >{key}</h3>
+            <Carousel autoPlay={false}>
+            {Array.from(map, ([key, value]) => (
+                <div key={key} style={{height : 400}}>
+                    <img  style={{width : "100%", height : 400, objectFit : "cover"}} src={value[0]} alt = {value[0]}/>
+                    <div style={{position : "absolute", display : "block", height : 0, top: "5%", left : "43.8%", color : "white"}}>
+                        <h3 style={{position : "relative", marginBottom: 180, textAlign: "center"}}className="titreSlide" >{key}</h3>
                         <CarouselPopUp photo={value} />
-                    </Carousel.Caption>
-                    </Carousel.Item>
-                        ))}
+                    </div>
+                </div>
+            ))}
             </Carousel>
         </div>
     )

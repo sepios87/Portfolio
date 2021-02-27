@@ -18,10 +18,10 @@ export default function Bio(props){
     <ParallaxProvider>
       <ParallaxCache/>
       <Parallax y={[10, -20]}>
-      <BackBubble	nbCercle={4}/>
       <Rotate bottom left>
         <Card id="carteBio">
-          <CardMedia title="image bio" id="imgBio" style={{width: "250px"}} image={props.lien}/>
+        <BackBubble	nbCercle={4}/>
+          <CardMedia title="image bio" id="imgBio" image={props.lien}/>
             <CardContent id="bio">
               <div>
                 <Typography component="h5" variant="h5">Florian TORIBIO</Typography>

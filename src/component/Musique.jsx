@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import useSound from 'use-sound';
 import Fab from '@material-ui/core/Fab';
 import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined';
@@ -8,10 +8,9 @@ import '../css/Musique.css'
 
 export default function Musique(){
 
-    const [play, { stop, isPlaying }] = useSound(
-        './musique/fond.mp3',
-        { volume: 0.4 }
-    );
+    const [play, { stop, isPlaying }] = useSound('./musique/fond.mp3', {volume: 0.4} );
+
+    useEffect(() => {play()}, [play]);
 
     return (
         <Fab style={{margin : 10}} id="volume" onClick={() => {isPlaying ? stop() : play();}}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from 'react-bootstrap/Nav'
+// import Nav from 'react-bootstrap/Nav'
 import useSound from 'use-sound';
 
 import '../css/NavBar.css'
@@ -12,25 +12,13 @@ export default function NavBar(){
   );
  
     return (
-        <Nav id="home" style={{padding : "1%"}} variant="pills" className="justify-content-end" defaultActiveKey="#home">
-          <Nav.Item>
-            <Nav.Link href="#home">Accueil</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link onClick={() => {play();}} href="#bio" eventKey="link-2">Bio</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link onClick={() => {play();}} href="#mesProjets" eventKey="link-3">Mon travail</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link onClick={() => {play();}} href="#competences" eventKey="link-4">Compétences</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="CV_Florian_TORIBIO.pdf" target="_blank" eventKey="link-5">CV</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link onClick={() => {play();}} href="#contact" eventKey="link-6">Contact</Nav.Link>
-          </Nav.Item>
-        </Nav>
+      <nav id="navbar" style={{position : "relative", zIndex : 2, color : "black", display : "flex", alignContent : "space-around", justifyContent : "flex-end", margin : "1.5% 3% 0 0"}}>
+        <a href="#accueil">Accueil</a>
+        <a onClick={() => {play();}} href="#bio">Bio</a>
+        <a onClick={() => {play();}} href="#mesProjets">Mon travail</a>
+        <a onClick={() => {play();}} href="#competences">Compétences</a>
+        <a href="CV_Florian_TORIBIO.pdf" target="_blank">CV</a>
+        <a onClick={() => {play();}} href="#contact">Contact</a>
+      </nav>
     );
 }

@@ -9,7 +9,7 @@ import Musique from './component/Musique'
 import Dev from './page/Dev'
 import Photo from './page/Photo'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() { 

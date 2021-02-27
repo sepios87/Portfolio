@@ -1,17 +1,21 @@
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link, #navJob{
-  background : none !important;
-  border-radius: 0 !important;
-  color : black !important;
+#navbar{
+  height: auto;
+}
+
+#navbar a:first-child{
   border-bottom : solid 2px rgb(130, 233, 171);
+}
+
+#navbar a{
+  padding-bottom: 8px;
+  font-size: 1.15em;
   text-decoration: none;
-  font-size: 1em;
-  padding: 0.5em 1rem;
+  color : black;
+  margin-left : 4%;
+  border-bottom : solid 2px rgba(130, 233, 171, 0);
+  transition-duration: 400ms;
 }
 
-.nav-pills .nav-link{
-  color :  black;
-}
-
-.nav-item{
-  z-index: 10;
+#navbar a:hover{
+  border-bottom : solid 2px rgb(130, 233, 171);
 }

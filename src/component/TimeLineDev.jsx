@@ -25,8 +25,8 @@ export default function TimeLine() {
           <TimelineConnector style={lineStyle} />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper className="timeLineElement" elevation={3} style={{padding: '3%'}}>
-            <h5>Lycée Turgot</h5>
+        <Paper className="timeLineElement" elevation={3} style={{padding: '5% 8%'}}>
+            <h5 style={{fontSize : "100%", margin : 0}}>Lycée Turgot</h5>
             <p>Bac Scientifique Mention Bien</p>
           </Paper>
         </TimelineContent>
@@ -42,8 +42,8 @@ export default function TimeLine() {
           <TimelineConnector style={lineStyle} />
         </TimelineSeparator>
         <TimelineContent>
-          <Paper className="timeLineElement" elevation={3} style={{padding: '3%'}}>
-            <h5>IUT Informatique du Limousin</h5>
+          <Paper className="timeLineElement" elevation={3} style={{padding: '5% 8%'}}>
+            <h5 style={{fontSize : "100%", margin : 0}}>IUT Informatique du Limousin</h5>
             <p>Coder, c'est cool.<br/>Développer, c'est mieux !</p>
           </Paper>
         </TimelineContent>
@@ -55,8 +55,8 @@ export default function TimeLine() {
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent>
-          <Paper className="timeLineElement" elevation={3} style={{padding: '4%'}}>
-            <h5>Bientôt en collaboration avec vous !</h5>
+        <Paper className="timeLineElement" elevation={3} style={{padding: '5% 8%'}}>
+            <h5 style={{fontSize : "100%", margin : 0}}>Bientôt en collaboration avec vous !</h5>
             <p>Réalisons vos projets ensemble</p>
           </Paper>
         </TimelineContent>

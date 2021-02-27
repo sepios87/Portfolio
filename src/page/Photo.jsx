@@ -12,7 +12,7 @@ export default function Photo() {
 
     return (
         <div>
-            <Header job={job} sousTitre={<h2 id="sousTitre">Vous entrez dans mon <b>autre</b> monde</h2>}  lien="/dev" image="./images/profil.jpg"/>
+            <Header job={job} sousTitre={<h2 id="sousTitre">Vous entrez dans mon <span style={{fontWeight : "bold"}}>autre</span> monde</h2>}  lien="/dev" image="./images/profil.jpg"/>
             <Bio timeLine={<TimeLinePhoto/>} job={job} lien="./images/profilBioPhoto.jpg"
             texte=" La photo est devenue une passion importante pour moi depuis 
                                 le collège et c'est ce qui m'a mené à devenir auto-entrepreneur en photgraphie.

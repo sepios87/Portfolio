@@ -23,6 +23,10 @@
       justify-content: space-around;
 }
 
+.MuiDialog-paper {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 992px) {
   .projet{
       -webkit-box-orient: vertical;
