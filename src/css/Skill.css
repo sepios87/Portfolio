@@ -1,0 +1,16 @@
+.logoSkill{
+    width : 45px;
+    height: 45px;
+    -webkit-transition: all 150ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 150ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 150ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 150ms ease-in;
+    transform: scale(1);
+}
+
+.logoSkill:hover{
+    transform: scale(1.2);
+}

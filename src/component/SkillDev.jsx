@@ -10,6 +10,8 @@ import useSound from 'use-sound';
 import BackBubble from './BackBubble'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
+import '../css/Skill.css'
+
 const BorderLinearProgress = withStyles({
   root: {
     height: 10,
@@ -33,7 +35,7 @@ export default function SkillDev(props){
   const barreProgression = (sourceImg, valeur, i) => {
     return (
       <div style={{display: "flex", padding : "2%"}} key={i} >
-        <img src={sourceImg} alt="Logo" style={{width : "45px", height:"45px"}} />
+        <img class="logoSkill" src={sourceImg} alt="Logo"/>
         <BorderLinearProgress style={{width : matches ? "80%" : "60%", margin : "auto"}} variant="determinate" value={valeur}/>
       </div>
     );

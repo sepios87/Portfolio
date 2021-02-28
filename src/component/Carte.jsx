@@ -43,7 +43,7 @@ export default function Carte(props) {
         </Card>
         <BackBubble	nbCercle={2}/>
       </Zoom>
-      <Dialog handleClose={() => setOpen(false)} open={open} title={props.nom} content={props.txt} lien={props.lien} image={props.source}/>
+      <Dialog handleClose={() => setOpen(false)} open={open} title={props.nom} langage={props.langage} content={props.txt} lien={props.lien} image={props.source}/>
     </>
   );
 }

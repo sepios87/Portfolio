@@ -25,7 +25,7 @@ const DialogTitle = ((props) => {
   );
 });
 
-export default function CustomizedDialogs({handleClose, open, title, content, lien, image}) {
+export default function CustomizedDialogs({handleClose, open, title, content, lien, image, langage}) {
 
   return (
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
@@ -36,7 +36,12 @@ export default function CustomizedDialogs({handleClose, open, title, content, li
           <img style={{display : "block", margin : "25px auto"}} width="85%" src={image} alt="img dialogue"/>
         </DialogContent>
         <DialogActions>
-            <Button style={{color  : "rgba(64,64,64,1)"}} href={lien} autoFocus onClick={handleClose} color="primary">En découvir plus</Button>
+            <div style={{width : "calc(100% - 140px)", display : "flex"}}>
+                {langage.map((item) => {
+                  return <img style={{marginLeft : "5%"}} width="28px" src={item} alt="img langage"/>
+                })}
+            </div>
+            <Button style={{color  : "rgba(64,64,64,1)"}} href={lien} autoFocus onClick={handleClose} color="primary">En savoir plus</Button>
         </DialogActions>
       </Dialog>
   );
